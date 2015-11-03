@@ -1,5 +1,5 @@
 
-public class Item_Generator {
+public class Weapon_Generator {
 
 	public static void main(String[] args) {
 		
