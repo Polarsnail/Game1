@@ -6,7 +6,6 @@ public class Bow_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int bowTypePicker = 1 + (int) (Math.random() * 4);
-		int bowDamage = 1 + (int) (Math.random() * 100);
 		String bowType = null;
 		String bowTier = null;
 
@@ -20,29 +19,30 @@ public class Bow_Generator {
 		case 4: bowType = "Repeating Crossbow"; break;
 		}
 
-		// Calculating bow tier & rarity
-
-		if (bowDamage <= 60) { 
-			bowTier = "Oak";
-		} else if (bowDamage <= 70)  { 
-			bowTier = "Bamboo";
-		} else if (bowDamage <= 80)  {
-			bowTier = "Hickory";
-		} else if (bowDamage <= 90)  {
-			bowTier = "Yew";
-		} else if (bowDamage <= 100) {
-			bowTier = "Ebony";
-		}
-		
 		// Getting a prefix & enchantment
 		Prefix_Generator.getPrefix();
 		Enchantment_Generator.getEnchantment();
+		
+		// Calculating bow tier & rarity
+
+		if Prefix_Generator.Damage <= 60) { 
+			bowTier = "Oak";
+		} else if (Prefix_Generator.Damage <= 70)  { 
+			bowTier = "Bamboo";
+		} else if (Prefix_Generator.Damage <= 80)  {
+			bowTier = "Hickory";
+		} else if (Prefix_Generator.Damage <= 90)  {
+			bowTier = "Yew";
+		} else if (Prefix_Generator.Damage <= 100) {
+			bowTier = "Ebony";
+		}
+		
 		
 		
 
 		// Console item information
 		System.out.println("Bow: " + Prefix_Generator.prefixPicked + " " + bowTier + " " + bowType);
-		System.out.println("Damage: " + bowDamage);
+		System.out.println("Damage: " + Prefix_Generator.Damage);
 		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 		
 	}
