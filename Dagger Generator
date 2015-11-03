@@ -7,7 +7,6 @@ public class Dagger_Generator {
 
 		int daggerTypePicker = 1 + (int) (Math.random() * 4);
 		int daggerDamage = 1 + (int) (Math.random() * 100);
-		String daggerRarity = null;
 		String daggerType = null;
 		String daggerTier = null;
 
@@ -25,19 +24,14 @@ public class Dagger_Generator {
 
 		if (daggerDamage <= 60) { 
 			daggerTier = "Copper";
-			daggerRarity = "Common";
 		} else if (daggerDamage <= 70)  { 
 			daggerTier = "Bronze";
-			daggerRarity = "Uncommon";
 		} else if (daggerDamage <= 80)  {
 			daggerTier = "Iron";
-			daggerRarity = "Rare";
 		} else if (daggerDamage <= 90)  {
 			daggerTier = "Steel";
-			daggerRarity = "Ultra Rare";
 		} else if (daggerDamage <= 100) {
 			daggerTier = "Mithril";
-			daggerRarity = "Legendary";
 		}
 		
 		// Getting a prefix & enchantment
@@ -49,7 +43,6 @@ public class Dagger_Generator {
 		// Console item information
 		System.out.println("Dagger: " + Prefix_Generator.prefixPicked + " " + daggerTier + " " + daggerType);
 		System.out.println("Damage: " + daggerDamage);
-		System.out.println("Rarity: " + daggerRarity);
 		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 	}
 }
