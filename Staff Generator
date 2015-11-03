@@ -6,7 +6,7 @@ public class Staff_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int staffTypePicker = 1 + (int) (Math.random() * 3);
-		int staffDamage = 50 + (int) (Math.random() * 50);
+		int staffDamage = 1 + (int) (Math.random() * 100);
 		String staffRarity = null;
 		String staffType = null;
 		String staffTier = null;
