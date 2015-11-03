@@ -7,7 +7,6 @@ public class BluntWeapon_Generator {
 
 		int bluntWeaponTypePicker = 1 + (int) (Math.random() * 4);
 		int bluntWeaponDamage = 1 + (int) (Math.random() * 100);
-		String bluntWeaponRarity = null;
 		String bluntWeaponType = null;
 		String bluntWeaponTier = null;
 
@@ -25,19 +24,14 @@ public class BluntWeapon_Generator {
 
 		if (bluntWeaponDamage <= 60) { 
 			bluntWeaponTier = "Copper";
-			bluntWeaponRarity = "Common";
 		} else if (bluntWeaponDamage <= 70)  { 
 			bluntWeaponTier = "Bronze";
-			bluntWeaponRarity = "Uncommon";
 		} else if (bluntWeaponDamage <= 80)  {
 			bluntWeaponTier = "Iron";
-			bluntWeaponRarity = "Rare";
 		} else if (bluntWeaponDamage <= 90)  {
 			bluntWeaponTier = "Steel";
-			bluntWeaponRarity = "Ultra Rare";
 		} else if (bluntWeaponDamage <= 100) {
 			bluntWeaponTier = "Mithril";
-			bluntWeaponRarity = "Legendary";
 		}
 		
 		// Getting a prefix & enchantment
@@ -47,7 +41,6 @@ public class BluntWeapon_Generator {
 		// Console item information
 		System.out.println("Blunt Weapon: " + Prefix_Generator.prefixPicked + " " + bluntWeaponTier + " " + bluntWeaponType);
 		System.out.println("Damage: " + bluntWeaponDamage);
-		System.out.println("Rarity: " + bluntWeaponRarity);
 		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 	}
 }
