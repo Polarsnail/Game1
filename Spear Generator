@@ -6,7 +6,7 @@ public class Spear_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int spearTypePicker = 1 + (int) (Math.random() * 4);
-		int spearDamage = 50 + (int) (Math.random() * 50);
+		int spearDamage = 1 + (int) (Math.random() * 100);
 		String spearRarity = null;
 		String spearType = null;
 		String spearTier = null;
