@@ -6,7 +6,6 @@ public class Staff_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int staffTypePicker = 1 + (int) (Math.random() * 3);
-		int staffDamage = 1 + (int) (Math.random() * 100);
 		String staffType = null;
 		String staffTier = null;
 
@@ -19,29 +18,30 @@ public class Staff_Generator {
 		case 3: staffType = "Wand";    break;
 		}
 
+		// Getting prefix, attack & enchantment
+		Prefix_Generator.getPrefix();
+		Enchantment_Generator.getEnchantment();
+		
 		// Calculating staff tier & rarity
 
-		if (staffDamage <= 60) { 
+		if (Prefix_Generator.Damage <= 60) { 
 			staffTier = "Oak";
-		} else if (staffDamage <= 70)  { 
+		} else if (Prefix_Generator.Damage <= 70)  { 
 			staffTier = "Bamboo";
-		} else if (staffDamage <= 80)  {
+		} else if (Prefix_Generator.Damage <= 80)  {
 			staffTier = "Hickory";
-		} else if (staffDamage <= 90)  {
+		} else if (Prefix_Generator.Damage <= 90)  {
 			staffTier = "Yew";
-		} else if (staffDamage <= 100) {
+		} else if (Prefix_Generator.Damage <= 100) {
 			staffTier = "Ebony";
 		}
 		
-		// Getting a prefix & enchantment
-		Prefix_Generator.getPrefix();
-		Enchantment_Generator.getEnchantment();
 		
 		
 
 		// Console item information
 		System.out.println("Staff: " + Prefix_Generator.prefixPicked + " " + staffTier + " " + staffType);
-		System.out.println("Damage: " + staffDamage);
+		System.out.println("Damage: " + Prefix_Generator.Damage);
 		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 		
 	}
