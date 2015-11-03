@@ -7,7 +7,6 @@ public class Staff_Generator {
 
 		int staffTypePicker = 1 + (int) (Math.random() * 3);
 		int staffDamage = 1 + (int) (Math.random() * 100);
-		String staffRarity = null;
 		String staffType = null;
 		String staffTier = null;
 
@@ -24,19 +23,14 @@ public class Staff_Generator {
 
 		if (staffDamage <= 60) { 
 			staffTier = "Oak";
-			staffRarity = "Common";
 		} else if (staffDamage <= 70)  { 
 			staffTier = "Bamboo";
-			staffRarity = "Uncommon";
 		} else if (staffDamage <= 80)  {
 			staffTier = "Hickory";
-			staffRarity = "Rare";
 		} else if (staffDamage <= 90)  {
 			staffTier = "Yew";
-			staffRarity = "Ultra Rare";
 		} else if (staffDamage <= 100) {
 			staffTier = "Ebony";
-			staffRarity = "Legendary";
 		}
 		
 		// Getting a prefix & enchantment
@@ -48,7 +42,6 @@ public class Staff_Generator {
 		// Console item information
 		System.out.println("Staff: " + Prefix_Generator.prefixPicked + " " + staffTier + " " + staffType);
 		System.out.println("Damage: " + staffDamage);
-		System.out.println("Rarity: " + staffRarity);
 		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 		
 	}
