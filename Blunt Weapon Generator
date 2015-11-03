@@ -33,7 +33,7 @@ public class BluntWeapon_Generator {
 			bluntWeaponTier = "Iron";
 		} else if (Prefix_Generator.Damage <= 90)  {
 			bluntWeaponTier = "Steel";
-		} else if (bPrefix_Generator.Damage <= 100) {
+		} else if (Prefix_Generator.Damage <= 100) {
 			bluntWeaponTier = "Mithril";
 		}
 		
