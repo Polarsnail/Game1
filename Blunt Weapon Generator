@@ -6,7 +6,7 @@ public class BluntWeapon_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int bluntWeaponTypePicker = 1 + (int) (Math.random() * 4);
-		int bluntWeaponDamage = 50 + (int) (Math.random() * 50);
+		int bluntWeaponDamage = 1 + (int) (Math.random() * 100);
 		String bluntWeaponRarity = null;
 		String bluntWeaponType = null;
 		String bluntWeaponTier = null;
