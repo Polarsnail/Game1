@@ -6,7 +6,6 @@ public class Axe_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int axeTypePicker = 1 + (int) (Math.random() * 3);
-		int axeDamage = 1 + (int) (Math.random() * 100);
 		String axeType = null;
 		String axeTier = null;
 
@@ -18,30 +17,32 @@ public class Axe_Generator {
 		case 2: axeType = "Battle Axe"; break;
 		case 3: axeType = "Shephard's Axe"; break;
 		}
-
+		
+		// Getting prefix, attack & enchantment
+		Prefix_Generator.getPrefix();
+		Enchantment_Generator.getEnchantment();
+		
 		// Calculating axe tier
 
-		if (axeDamage <= 60) { 
+		if (Prefix_Generator.Damage <= 60) { 
 			axeTier = "Copper";
-		} else if (axeDamage <= 70)  { 
+		} else if (Prefix_Generator.Damage <= 70)  { 
 			axeTier = "Bronze";
-		} else if (axeDamage <= 80)  {
+		} else if (Prefix_Generator.Damage <= 80)  {
 			axeTier = "Iron";
-		} else if (axeDamage <= 90)  {
+		} else if (Prefix_Generator.Damage <= 90)  {
 			axeTier = "Steel";
-		} else if (axeDamage <= 100) {
+		} else if (Prefix_Generator.Damage <= 100) {
 			axeTier = "Mithril";
 		}
 		
-		// Getting a prefix & enchantment
-		Prefix_Generator.getPrefix();
-		Enchantment_Generator.getEnchantment();
+
 		
 		
 
 		// Console item information
 		System.out.println("Axe: " + Prefix_Generator.prefixPicked + " " + axeTier + " " + axeType);
-		System.out.println("Damage: " + axeDamage);
+		System.out.println("Damage: " + Prefix_Generator.Damage);
 		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 	}
 
