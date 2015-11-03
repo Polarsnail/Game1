@@ -6,7 +6,6 @@ public class BluntWeapon_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int bluntWeaponTypePicker = 1 + (int) (Math.random() * 4);
-		int bluntWeaponDamage = 1 + (int) (Math.random() * 100);
 		String bluntWeaponType = null;
 		String bluntWeaponTier = null;
 
@@ -20,27 +19,28 @@ public class BluntWeapon_Generator {
 		case 4: bluntWeaponType = "War Hammer";   break;
 		}
 
-		// Calculating bluntWeapon tier & rarity
-
-		if (bluntWeaponDamage <= 60) { 
-			bluntWeaponTier = "Copper";
-		} else if (bluntWeaponDamage <= 70)  { 
-			bluntWeaponTier = "Bronze";
-		} else if (bluntWeaponDamage <= 80)  {
-			bluntWeaponTier = "Iron";
-		} else if (bluntWeaponDamage <= 90)  {
-			bluntWeaponTier = "Steel";
-		} else if (bluntWeaponDamage <= 100) {
-			bluntWeaponTier = "Mithril";
-		}
-		
-		// Getting a prefix & enchantment
+		// Getting prefix, attack & enchantment
 		Prefix_Generator.getPrefix();
 		Enchantment_Generator.getEnchantment();
 		
+		// Calculating bluntWeapon tier & rarity
+
+		if (Prefix_Generator.Damage <= 60) { 
+			bluntWeaponTier = "Copper";
+		} else if (Prefix_Generator.Damage <= 70)  { 
+			bluntWeaponTier = "Bronze";
+		} else if Prefix_Generator.Damage <= 80)  {
+			bluntWeaponTier = "Iron";
+		} else if (Prefix_Generator.Damage <= 90)  {
+			bluntWeaponTier = "Steel";
+		} else if (bPrefix_Generator.Damage <= 100) {
+			bluntWeaponTier = "Mithril";
+		}
+		
+		
 		// Console item information
 		System.out.println("Blunt Weapon: " + Prefix_Generator.prefixPicked + " " + bluntWeaponTier + " " + bluntWeaponType);
-		System.out.println("Damage: " + bluntWeaponDamage);
+		System.out.println("Damage: " + Prefix_Generator.Damage);
 		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 	}
 }
