@@ -6,7 +6,7 @@ public class Dagger_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int daggerTypePicker = 1 + (int) (Math.random() * 4);
-		int daggerDamage = 50 + (int) (Math.random() * 50);
+		int daggerDamage = 1 + (int) (Math.random() * 100);
 		String daggerRarity = null;
 		String daggerType = null;
 		String daggerTier = null;
