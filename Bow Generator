@@ -7,7 +7,6 @@ public class Bow_Generator {
 
 		int bowTypePicker = 1 + (int) (Math.random() * 4);
 		int bowDamage = 1 + (int) (Math.random() * 100);
-		String bowRarity = null;
 		String bowType = null;
 		String bowTier = null;
 
@@ -25,19 +24,14 @@ public class Bow_Generator {
 
 		if (bowDamage <= 60) { 
 			bowTier = "Oak";
-			bowRarity = "Common";
 		} else if (bowDamage <= 70)  { 
 			bowTier = "Bamboo";
-			bowRarity = "Uncommon";
 		} else if (bowDamage <= 80)  {
 			bowTier = "Hickory";
-			bowRarity = "Rare";
 		} else if (bowDamage <= 90)  {
 			bowTier = "Yew";
-			bowRarity = "Ultra Rare";
 		} else if (bowDamage <= 100) {
 			bowTier = "Ebony";
-			bowRarity = "Legendary";
 		}
 		
 		// Getting a prefix & enchantment
@@ -49,7 +43,6 @@ public class Bow_Generator {
 		// Console item information
 		System.out.println("Bow: " + Prefix_Generator.prefixPicked + " " + bowTier + " " + bowType);
 		System.out.println("Damage: " + bowDamage);
-		System.out.println("Rarity: " + bowRarity);
 		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 		
 	}
