@@ -6,7 +6,7 @@ public class Sword_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int swordTypePicker = 1 + (int) (Math.random() * 5);
-		int swordDamage = 50 + (int) (Math.random() * 50);
+		int swordDamage = 1 + (int) (Math.random() * 100);
 		String swordRarity = null;
 		String swordType = null;
 		String swordTier = null;
