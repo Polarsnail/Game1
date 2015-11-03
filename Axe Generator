@@ -3,7 +3,7 @@ public class Axe_Generator {
 	
 	static void getAxe() {
 
-		// The Hobo of Power's Weapon Generator 2.0
+		// The Hobo of Power's Weapon Generator 3.0
 
 		int axeTypePicker = 1 + (int) (Math.random() * 3);
 		int axeDamage = 1 + (int) (Math.random() * 100);
