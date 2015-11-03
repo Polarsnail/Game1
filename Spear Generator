@@ -6,7 +6,6 @@ public class Spear_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int spearTypePicker = 1 + (int) (Math.random() * 4);
-		int spearDamage = 1 + (int) (Math.random() * 100);
 		String spearType = null;
 		String spearTier = null;
 
@@ -19,30 +18,31 @@ public class Spear_Generator {
 		case 3: spearType = "Lance";   break;
 		case 4: spearType = "Pike";    break;
 		}
+		
+		// Getting prefix, attack & enchantment
+		Prefix_Generator.getPrefix();
+		Enchantment_Generator.getEnchantment();
 
 		// Calculating spear tier & rarity
 
-		if (spearDamage <= 60) { 
+		if (Prefix_Generator.Damage <= 60) { 
 			spearTier = "Copper";
-		} else if (spearDamage <= 70)  { 
+		} else if (Prefix_Generator.Damage <= 70)  { 
 			spearTier = "Bronze";
-		} else if (spearDamage <= 80)  {
+		} else if (Prefix_Generator.Damage <= 80)  {
 			spearTier = "Iron";
-		} else if (spearDamage <= 90)  {
+		} else if (Prefix_Generator.Damage <= 90)  {
 			spearTier = "Steel";
-		} else if (spearDamage <= 100) {
+		} else if (Prefix_Generator.Damage <= 100) {
 			spearTier = "Mithril";
 		}
 		
-		// Getting a prefix & enchantment
-		Prefix_Generator.getPrefix();
-		Enchantment_Generator.getEnchantment();
 		
 		
 
 		// Console item information
 		System.out.println("Spear: " + Prefix_Generator.prefixPicked + " " + spearTier + " " + spearType);
-		System.out.println("Damage: " + spearDamage);
+		System.out.println("Damage: " + Prefix_Generator.Damage);
 		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 	}
 }
