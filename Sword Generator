@@ -6,7 +6,6 @@ public class Sword_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int swordTypePicker = 1 + (int) (Math.random() * 5);
-		int swordDamage = 1 + (int) (Math.random() * 100);
 		String swordType = null;
 		String swordTier = null;
 
@@ -20,30 +19,32 @@ public class Sword_Generator {
 		case 4: swordType = "Shortsword";     break;
 		case 5: swordType = "Sword Gauntlet"; break;
 		}
-
+		
+                // Getting prefix, attack & enchantment
+		Prefix_Generator.getPrefix();
+		Enchantment_Generator.getEnchantment();
+		
 		// Calculating sword tier & rarity
 
-		if (swordDamage <= 60) { 
+		if (Prefix_Generator.Damage <= 60) { 
 			swordTier = "Copper";
-		} else if (swordDamage <= 70)  { 
+		} else if (Prefix_Generator.Damage <= 70)  { 
 			swordTier = "Bronze";
-		} else if (swordDamage <= 80)  {
+		} else if (Prefix_Generator.Damage <= 80)  {
 			swordTier = "Iron";
-		} else if (swordDamage <= 90)  {
+		} else if (Prefix_Generator.Damage <= 90)  {
 			swordTier = "Steel";
-		} else if (swordDamage <= 100) {
+		} else if (Prefix_Generator.Damage <= 100) {
 			swordTier = "Mithril";
 		}
 		
-		// Getting a prefix & enchantment
-		Prefix_Generator.getPrefix();
-		Enchantment_Generator.getEnchantment();
+
 		
 		
 
 		// Console item information
 		System.out.println("Sword: " + Prefix_Generator.prefixPicked + " " + swordTier + " " + swordType);
-		System.out.println("Damage: " + swordDamage);
+		System.out.println("Damage: " + Prefix_Generator.Damage);
 		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 	}
 }
