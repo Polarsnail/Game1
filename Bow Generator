@@ -6,7 +6,7 @@ public class Bow_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int bowTypePicker = 1 + (int) (Math.random() * 4);
-		int bowDamage = 50 + (int) (Math.random() * 50);
+		int bowDamage = 1 + (int) (Math.random() * 100);
 		String bowRarity = null;
 		String bowType = null;
 		String bowTier = null;
