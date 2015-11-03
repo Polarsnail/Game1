@@ -6,7 +6,6 @@ public class Dagger_Generator {
 		// The Hobo of Power's Weapon Generator 2.0
 
 		int daggerTypePicker = 1 + (int) (Math.random() * 4);
-		int daggerDamage = 1 + (int) (Math.random() * 100);
 		String daggerType = null;
 		String daggerTier = null;
 
@@ -20,29 +19,30 @@ public class Dagger_Generator {
 		case 4: daggerType = "Stiletto";         break;
 		}
 
+		// Getting prefix, attack & enchantment
+		Prefix_Generator.getPrefix();
+		Enchantment_Generator.getEnchantment();
+		
 		// Calculating dagger tier & rarity
 
-		if (daggerDamage <= 60) { 
+		if (Prefix_Generator.Damage <= 60) { 
 			daggerTier = "Copper";
-		} else if (daggerDamage <= 70)  { 
+		} else if (Prefix_Generator.Damage <= 70)  { 
 			daggerTier = "Bronze";
-		} else if (daggerDamage <= 80)  {
+		} else if (Prefix_Generator.Damage <= 80)  {
 			daggerTier = "Iron";
-		} else if (daggerDamage <= 90)  {
+		} else if (Prefix_Generator.Damage <= 90)  {
 			daggerTier = "Steel";
-		} else if (daggerDamage <= 100) {
+		} else if (Prefix_Generator.Damage <= 100) {
 			daggerTier = "Mithril";
 		}
 		
-		// Getting a prefix & enchantment
-		Prefix_Generator.getPrefix();
-		Enchantment_Generator.getEnchantment();
 		
 		
 
 		// Console item information
 		System.out.println("Dagger: " + Prefix_Generator.prefixPicked + " " + daggerTier + " " + daggerType);
-		System.out.println("Damage: " + daggerDamage);
+		System.out.println("Damage: " + Prefix_Generator.Damage);
 		System.out.println("Enchantment: " + Enchantment_Generator.enchantmentPicked);
 	}
 }
