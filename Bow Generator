@@ -19,7 +19,7 @@ public class Bow_Generator {
 		case 4: bowType = "Repeating Crossbow"; break;
 		}
 
-		// Getting a prefix & enchantment
+		// Getting prefix, attack & enchantment
 		Prefix_Generator.getPrefix();
 		Enchantment_Generator.getEnchantment();
 		
