@@ -1,0 +1,20 @@
+
+public class Item_Generator {
+
+	public static void main(String[] args) {
+		
+		int weaponPicker = 1 + (int) (Math.random() * 8);
+
+		switch (weaponPicker) {
+		case 1: Axe_Generator.getAxe(); break;
+		case 2: Dagger_Generator.getDagger(); break;
+		case 3: Sword_Generator.getSword(); break;
+		case 4: Polearm_Generator.getPolearm(); break;
+		case 5: Spear_Generator.getSpear(); break;
+		case 6: Staff_Generator.getStaff(); break;
+		case 7: BluntWeapon_Generator.getBluntWeapon(); break;
+		case 8: Bow_Generator.getBow(); break;
+		}
+
+	}
+}
