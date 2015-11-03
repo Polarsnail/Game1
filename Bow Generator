@@ -25,7 +25,7 @@ public class Bow_Generator {
 		
 		// Calculating bow tier & rarity
 
-		if Prefix_Generator.Damage <= 60) { 
+		if (Prefix_Generator.Damage <= 60) { 
 			bowTier = "Oak";
 		} else if (Prefix_Generator.Damage <= 70)  { 
 			bowTier = "Bamboo";
