@@ -1,0 +1,46 @@
+public class characterGenerator {
+	
+	public static String weaponMastery = null;
+	public static String characterHealth = null;
+    public static int healthPicker = 25 + (int) (Math.random() * 10);
+	
+	static void getCharacter() {
+    int masteryPicker = 1 + (int) (Math.random() * 7);
+    	switch (masteryPicker) {
+			case 1:
+				weaponMastery = "Axe";
+				break;
+			case 2:
+				weaponMastery = "Polearm";
+				break;
+			case 3:
+				weaponMastery = "Dagger";
+				break;
+			case 4:
+				weaponMastery = "Spear";
+				break;
+			case 5:
+				weaponMastery = "Sword";
+				break;
+			case 6:
+				weaponMastery = "Magic";
+				break;
+			case 7:
+				weaponMastery = "Bow";
+				break;
+    	}
+
+    	if (healthPicker == 25){
+    		characterHealth = "Unhealthy coach potato";
+    	}
+    	else if (healthPicker <= 30) {
+    		characterHealth = "Average health";
+    	}
+    	else if (healthPicker < 35) {
+    		characterHealth = "Bushy-tailed";
+    	}
+    	else if (healthPicker == 35) {
+    		characterHealth = "Perfect condition";
+    	}
+	}
+}
