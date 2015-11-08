@@ -1,0 +1,38 @@
+
+public class environmentGenerator {
+	static void getEnvironment(){
+		int environmentPicker = 1 + (int) (Math.random() * 10);
+		String pirateGrotto = "Pirate's Grotto"; //Grotto off of Landon lake, used to hide and store their loot
+		String impCity = "Grohthundal City"; //
+		String cfVillage = "Cleef Village";
+		String fedRiver = "Fedoray River";
+		String petePots = "Peter's Peck 'o Potions";
+		String theGreen = "The Greenway";
+		String priField = "Pride Field";
+		String sunSpire = "Sun Spire";
+		String lockStock = "Locked & Stocked";
+		String trivCastle = "Trivius Castle";
+		String millForest = "The Millenial Forest";
+		String snapRock = "Snap Crackle & Rock";
+		String blackHills = "The Black Hills";
+		String arrowPeak = "Arrow Peak";
+		String valorHills = "Valor Foothills";
+		String creoPeak = "Creo Peak";
+		String swigSwamp = "Swiggity Swamp";
+		String landLake = "Landon Lake";
+		String thiefHollow = "Thieves Hollow";
+		String windPeak = "Windbreak Peak";
+		String thisWoods = "Thistlebrush Woods";
+		String blank = "";
+		String blank2 = "";
+		String blank3 = "";
+		String blank4 = "";
+		String blank5 = "";
+		String blank6 = "";
+		String blank7 = "";
+		String blank8 = "";
+		String blank9 = "";
+		
+		
+	}
+}
