@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class characterGenerator {
 	
@@ -8,31 +9,6 @@ public class characterGenerator {
     public static int masteryLevel = 0;
 	
 	static void genCharacter() {
-
-        int masteryPicker = 1 + (int) (Math.random() * 7);
-    		switch (masteryPicker) {
-				case 1:
-					weaponMastery = "Axe";
-					break;
-				case 2:
-					weaponMastery = "Polearm";
-					break;
-				case 3:
-					weaponMastery = "Dagger";
-					break;
-				case 4:
-					weaponMastery = "Spear";
-					break;
-				case 5:
-					weaponMastery = "Sword";
-					break;
-				case 6:
-					weaponMastery = "Magic";
-					break;
-				case 7:
-					weaponMastery = "Bow";
-					break;
-    		}
     	
     		if (healthPicker == 25){
     			characterHealth = "Unhealthy coach potato";
@@ -48,19 +24,91 @@ public class characterGenerator {
     		} 
     		
     		Scanner userImput = new Scanner(System.in);
-    		System.out.println("do you want an afro?");
+    		System.out.println("Are you male or female?");
     		String userImp = userImput.nextLine();
     			switch(userImp)
     		    {
-    		        case "yes": System.out.println("You got a fro"); break;
-    		        case "no": System.out.println("You got no fro!"); break;
+    		        case "male": 
+    		        	System.out.println("You are now manly man."); 
+    		        	break;
+    		        case "female": 
+    		        	System.out.println("You are now femaley woman."); 
+    		        	break;
+    		        case "Male": 
+    		        	System.out.println("You are now manly man."); 
+    		        	break;
+    		        case "Female": 
+    		        	System.out.println("You are now femaley woman."); 
+    		        	break;
     		    }
-    		        System.out.println("are you male or female?");
+    				System.out.println("");
+    		        System.out.println("Pick a weapon from the list to master:");
+    		        System.out.println("To master axes, press A");
+    		        System.out.println("To master polearms, press P");
+    		        System.out.println("To master ranged weapons, press R");
+    		        System.out.println("To master magic weapons, press M");
+    		        System.out.println("To master daggers, press D");
+    		        System.out.println("To master swords, press S");
+    		        System.out.println("To master blunt weapons, B");
     		        String userImp2 = userImput.nextLine();
     		        switch(userImp2)
     		    {
-    		        case "male": System.out.println("You are a manly man"); break;
-    		        case "female": System.out.println("You are a femaly woman"); break;
+    		        case "a": 
+    		        	System.out.println("You mastered axes."); 
+    		        	weaponMastery = "Axe";
+    		        	break;
+    		        case "r": 
+    		        	System.out.println("You mastered ranged weapons."); 
+    		        	weaponMastery = "Ranged";
+    		        	break;
+    		        case "p": 
+    		        	System.out.println("You mastered polearms."); 
+    		        	weaponMastery = "Polearm";
+    		        	break;
+    		        case "s": 
+    		        	System.out.println("You mastered swords."); 
+    		        	weaponMastery = "Sword";
+    		        	break;
+    		        case "d": 
+    		        	System.out.println("You mastered daggers."); 
+    		        	weaponMastery = "Dagger";
+    		        	break;
+    		        case "m": 
+    		        	System.out.println("You mastered magics."); 
+    		        	weaponMastery = "Magic";
+    		        	break;
+    		        case "b": 
+    		        	System.out.println("You mastered blunt weapons."); 
+    		        	weaponMastery = "Blunt weapon";
+    		        	break;
+    		        case "A": 
+    		        	System.out.println("You mastered axes."); 
+    		        	weaponMastery = "Axe";
+    		        	break;
+    		        case "R": 
+    		        	System.out.println("You mastered ranged weapons.");
+    		        	weaponMastery = "Ranged";
+    		        	break;
+    		        case "P": 
+    		        	System.out.println("You mastered polearms."); 
+    		        	weaponMastery = "Polearm";
+    		        	break;
+    		        case "S": 
+    		        	System.out.println("You mastered swords."); 
+    		        	weaponMastery = "Sword";
+    		        	break;
+    		        case "D": 
+    		        	System.out.println("You mastered daggers."); 
+    		        	weaponMastery = "Dagger";
+    		        	break;
+    		        case "M": 
+    		        	System.out.println("You mastered magics.");
+    		        	weaponMastery = "Magic";
+    		        	break;
+    		        case "B": 
+    		        	System.out.println("You mastered blunt weapons."); 
+    		        	weaponMastery = "Blunt weapon";
+    		        	break;
     		    }
     				System.out.println("Character generated: ");
     				System.out.println("Weapon Mastery: " + characterGenerator.weaponMastery);
