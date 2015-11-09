@@ -1,19 +1,11 @@
-import java.util.Scanner;
+
 public class battleSimulator {
 	public static int gobNumbers = 1 + (int)(Math.random()*3);
 	public static void main(String[] args) throws InterruptedException {  
 		
-		Scanner userImput = new Scanner(System.in);
-        System.out.println("do you want an afro?");
-        String userImp = userImput.nextLine();
-        System.out.println("you now have an afro!(or maybe not)");
-		
-		characterGenerator.getCharacter();
-		System.out.println("Character generated: ");
-		System.out.println("Weapon Mastery: " + characterGenerator.weaponMastery);
-		System.out.println("Health: " + characterGenerator.characterHealth);
-		System.out.println(characterGenerator.healthPicker);
-		System.out.println("Afro: Yes");
+
+		characterGenerator.genCharacter();
+
 		//Thread.sleep(3000);
 		System.out.println("");
 		weaponGenerator.getWeapon();
