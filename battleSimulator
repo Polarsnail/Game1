@@ -77,13 +77,11 @@ public class battleSimulator {
         				System.out.println("You hit the " + monsterGenerator.monster + " for " + allyAttack + " damage." +
         						" " + monsterGenerator.monster + " has " + monsterGenerator.monsterHealth + " health remaining!"); break;
         				case "b":
-        					System.out.println(characterGenerator.healthPicker);
         				    alliesHealth = alliesHealth + heal;
         					System.out.println("you heal for " + heal +" health"); 
         				if (alliesHealth >characterGenerator.healthPicker) {
         					alliesHealth = characterGenerator.healthPicker;
         					System.out.println("You are now at maximum health");
-        					System.out.println(alliesHealth);
         				}
         				case "c": alliesHealth = alliesHealth - monsterGenerator.monsterDamage; System.out.println(alliesHealth +
         						" health remaining"); break;
@@ -131,13 +129,11 @@ public class battleSimulator {
 				System.out.println("You hit the " + monsterGenerator.monster + " for " + allyAttack + " damage." +
 						" " + monsterGenerator.monster + " has " + monsterGenerator.monsterHealth + " health remaining!"); break;
 				case "b":
-					System.out.println(characterGenerator.healthPicker);
 				    alliesHealth = alliesHealth + heal;
 					System.out.println("you heal for " + heal +" health"); 
 				if (alliesHealth >characterGenerator.healthPicker) {
 					alliesHealth = characterGenerator.healthPicker;
 					System.out.println("You are now at maximum health");
-					System.out.println(alliesHealth);
 				}
 				break;
 				case "c": alliesHealth = alliesHealth - monsterGenerator.monsterDamage; System.out.println(alliesHealth +
@@ -160,4 +156,5 @@ public class battleSimulator {
 		}
 	}
 }
+
 
