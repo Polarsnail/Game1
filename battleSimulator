@@ -10,6 +10,9 @@ public class battleSimulator {
 		System.out.println(characterGenerator.healthPicker);
 		System.out.println("Afro: Yes");
 		//Thread.sleep(3000);
+		System.out.println("");
+		weaponGenerator.getWeapon();
+		System.out.println("");
 
 		int allyInit = 1 + (int)(Math.random()*20); 
 		int gobInit = 1 + (int)(Math.random()*20);
@@ -162,7 +165,7 @@ public class battleSimulator {
 		//start of the turn sequence 
 		while (turn = true) { 
 			//Damage calculators
-			int allyAttack = 1 + (int)(Math.random()*5); 
+			int allyAttack = weaponGenerator.damage - 1 + (int)(Math.random()*5); 
 		 if(gob1 == "Goblin Archer")
 			gob1Attack = 1 + (int)(Math.random()*5);
 	else if(gob1 == "Goblin Warrior")
@@ -223,7 +226,10 @@ public class battleSimulator {
 			//Start of turn enemy goes first
 			if (enemyGoesFirst == true) {
 				if(gob1Alive == true && allies == true){
-				alliesHealth = alliesHealth - gob1Attack; 
+				alliesHealth = alliesHealth - gob1Attack;
+					if (alliesHealth <= 0) {
+						alliesHealth = 0;
+					}
 				System.out.println("The "+ gob1+ " attacks for " + gob1Attack + " damage."+
 					" The allies have "	+ alliesHealth + " health remaining");
 				if (alliesHealth <= 0) { 
@@ -231,6 +237,9 @@ public class battleSimulator {
 				if(gobNumbers >= 2 && gob2Alive == true && allies == true)
 				{
 					alliesHealth = alliesHealth - gob2Attack; 
+					if (alliesHealth <= 0) {
+						alliesHealth = 0;
+					}
 					System.out.println("The "+ gob2+ " attacks for " + gob2Attack + " damage."+
 						" The allies have "	+ alliesHealth + " health remaining");
 					if (alliesHealth <= 0) { 
@@ -239,6 +248,9 @@ public class battleSimulator {
 				if(gobNumbers == 3 && gob3Alive == true && allies == true)
 				{
 					alliesHealth = alliesHealth - gob3Attack; 
+					if (alliesHealth <= 0) {
+						alliesHealth = 0;
+					}
 					System.out.println("The "+ gob3+ " attacks for " + gob3Attack + " damage."+
 						" The allies have "	+ alliesHealth + " health remaining");
 					if (alliesHealth <= 0) { 
@@ -247,6 +259,9 @@ public class battleSimulator {
 				if(gob1Alive == true && allies == true)
 				{
 					gob1Health = gob1Health - allyAttack ;
+					if (gob1Health <= 0) {
+						gob1Health = 0;
+					}
 				System.out.println(gob1 + " got hit for " + allyAttack + " damage and has " 
 						+ gob1Health + " health remaining");
 			    if (gob1Health <= 0) { 
@@ -264,6 +279,9 @@ public class battleSimulator {
 				{
 					if(gob1Alive == false){
 					gob2Health = gob2Health - allyAttack ;
+					if (gob2Health <= 0) {
+						gob2Health = 0;
+					}
 				System.out.println(gob2 + " got hit for " + allyAttack + " damage and has " 
 						+ gob2Health + " health remaining");
 			    if (gob2Health <= 0) { 
@@ -280,6 +298,9 @@ public class battleSimulator {
 				{
 					if(gob1Alive == false){
 					gob3Health = gob3Health - allyAttack ;
+					if (gob3Health <= 0) {
+						gob3Health = 0;
+					}
 				System.out.println(gob3 + " got hit for " + allyAttack + " damage and has " 
 						+ gob3Health + " health remaining");
 			    if (gob3Health <= 0) { 
@@ -295,6 +316,9 @@ public class battleSimulator {
 					 if(gob1Alive == true && allies == true)
 						{
 							gob1Health = gob1Health - allyAttack ;
+							if (gob1Health <= 0) {
+								gob1Health = 0;
+							}
 						System.out.println(gob1 + " got hit for " + allyAttack + " damage and has " 
 								+ gob1Health + " health remaining");
 					    if (gob1Health <= 0) { 
@@ -312,6 +336,9 @@ public class battleSimulator {
 						{
 							if(gob1Alive == false){
 							gob2Health = gob2Health - allyAttack ;
+							if (gob2Health <= 0) {
+								gob2Health = 0;
+							}
 						System.out.println(gob2 + " got hit for " + allyAttack + " damage and has " 
 								+ gob2Health + " health remaining");
 					    if (gob2Health <= 0) { 
@@ -328,6 +355,9 @@ public class battleSimulator {
 						{
 							if(gob2Alive == false){
 							gob3Health = gob3Health - allyAttack ;
+							if (gob3Health <= 0) {
+								gob3Health = 0;
+							}
 						System.out.println(gob3 + " got hit for " + allyAttack + " damage and has " 
 								+ gob3Health + " health remaining");
 					    if (gob3Health <= 0) { 
@@ -340,6 +370,9 @@ public class battleSimulator {
 						
 						if(gob1Alive == true){
 						alliesHealth = alliesHealth - gob1Attack; 
+						if (alliesHealth <= 0) {
+							alliesHealth = 0;
+						}
 						System.out.println("The "+ gob1+ " attacks for " + gob1Attack + " damage."+
 							" The allies have "	+ alliesHealth + " health remaining");
 						if (alliesHealth <= 0) { 
@@ -347,6 +380,9 @@ public class battleSimulator {
 						if(gobNumbers >= 2 && gob2Alive == true && allies == true)
 						{
 							alliesHealth = alliesHealth - gob2Attack; 
+							if (alliesHealth <= 0) {
+								alliesHealth = 0;
+							}
 							System.out.println("The "+ gob2+ " attacks for " + gob2Attack + " damage."+
 								" The allies have "	+ alliesHealth + " health remaining");
 							if (alliesHealth <= 0) { 
@@ -355,6 +391,9 @@ public class battleSimulator {
 						if(gobNumbers == 3 && gob3Alive == true && allies == true)
 						{
 							alliesHealth = alliesHealth - gob3Attack; 
+							if (alliesHealth <= 0) {
+								alliesHealth = 0;
+							}
 							System.out.println("The "+ gob3+ " attacks for " + gob3Attack + " damage."+
 								" The allies have "	+ alliesHealth + " health remaining");
 							if (alliesHealth <= 0) { 
