@@ -1,128 +1,123 @@
 import java.util.Scanner;
 
 public class characterGenerator {
-	
+
 	public static String weaponMastery = null;
 	public static String characterHealth = null;
-    public static int healthPicker = 25 + (int) (Math.random() * 10);
-    public static String characterHairstyle = null;
-    public static int masteryLevel = 0;
-	
+	public static int healthPicker = 25 + (int) (Math.random() * 10);
+	public static String characterHairstyle = null;
+	public static int masteryLevel = 0;
+
 	static void genCharacter() {
-    	
-    		if (healthPicker == 25){
-    			characterHealth = "Unhealthy coach potato";
-    		}
-    		else if (healthPicker <= 30) {
-    			characterHealth = "Average health";
-    		}
-    		else if (healthPicker < 35) {
-    			characterHealth = "Bushy-tailed";
-    		}
-    		else if (healthPicker == 35) {
-    			characterHealth = "Perfect condition";
-    		} 
-    		
-    		Scanner userImput = new Scanner(System.in);
-    		System.out.println("Are you male or female?");
-    		String userImp = userImput.nextLine();
-    			switch(userImp)
-    		    {
-    		        case "male": 
-    		        	System.out.println("You are now manly man."); 
-    		        	break;
-    		        case "female": 
-    		        	System.out.println("You are now femaley woman."); 
-    		        	break;
-    		        case "Male": 
-    		        	System.out.println("You are now manly man."); 
-    		        	break;
-    		        case "Female": 
-    		        	System.out.println("You are now femaley woman."); 
-    		        	break;
-    		    }
-    				System.out.println("");
-    		        System.out.println("Pick a weapon from the list to master:");
-    		        System.out.println("To master axes, press A");
-    		        System.out.println("To master polearms, press P");
-    		        System.out.println("To master ranged weapons, press R");
-    		        System.out.println("To master magic weapons, press M");
-    		        System.out.println("To master daggers, press D");
-    		        System.out.println("To master swords, press S");
-    		        System.out.println("To master blunt weapons, B");
-    		        String userImp2 = userImput.nextLine();
-    		        switch(userImp2)
-    		    {
-    		        case "a": 
-    		        	System.out.println("You mastered axes."); 
-    		        	weaponMastery = "Axe";
-    		        	break;
-    		        case "r": 
-    		        	System.out.println("You mastered ranged weapons."); 
-    		        	weaponMastery = "Ranged";
-    		        	break;
-    		        case "p": 
-    		        	System.out.println("You mastered polearms."); 
-    		        	weaponMastery = "Polearm";
-    		        	break;
-    		        case "s": 
-    		        	System.out.println("You mastered swords."); 
-    		        	weaponMastery = "Sword";
-    		        	break;
-    		        case "d": 
-    		        	System.out.println("You mastered daggers."); 
-    		        	weaponMastery = "Dagger";
-    		        	break;
-    		        case "m": 
-    		        	System.out.println("You mastered magics."); 
-    		        	weaponMastery = "Magic";
-    		        	break;
-    		        case "b": 
-    		        	System.out.println("You mastered blunt weapons."); 
-    		        	weaponMastery = "Blunt weapon";
-    		        	break;
-    		        case "A": 
-    		        	System.out.println("You mastered axes."); 
-    		        	weaponMastery = "Axe";
-    		        	break;
-    		        case "R": 
-    		        	System.out.println("You mastered ranged weapons.");
-    		        	weaponMastery = "Ranged";
-    		        	break;
-    		        case "P": 
-    		        	System.out.println("You mastered polearms."); 
-    		        	weaponMastery = "Polearm";
-    		        	break;
-    		        case "S": 
-    		        	System.out.println("You mastered swords."); 
-    		        	weaponMastery = "Sword";
-    		        	break;
-    		        case "D": 
-    		        	System.out.println("You mastered daggers."); 
-    		        	weaponMastery = "Dagger";
-    		        	break;
-    		        case "M": 
-    		        	System.out.println("You mastered magics.");
-    		        	weaponMastery = "Magic";
-    		        	break;
-    		        case "B": 
-    		        	System.out.println("You mastered blunt weapons."); 
-    		        	weaponMastery = "Blunt weapon";
-    		        	break;
-    		    }
-    		        System.out.println("Are you Helga?");
-    		        String userImp3 = userImput.nextLine();
-    		        switch(userImp3) {
-    		        case "yes":
-    		        	System.out.println("LOOKS LIKE YOU GOT A LOT OF KICKIN THE SNOT OUT OF THE TO DO");
-    		        	break;
-					case "no":
-						System.out.println("IT STILL LOOKS LIKE YOU GOT A LOT OF KICKIN THE SNOT OUT OF THE TO DO");
-						break;
-    				}
-					System.out.println("Character generated: ");
-    				System.out.println("Weapon Mastery: " + characterGenerator.weaponMastery);
-    				System.out.println("Health: " + characterGenerator.characterHealth);
-    				System.out.println(characterGenerator.healthPicker);
-	  }
+
+		if (healthPicker == 25) {
+			characterHealth = "Unhealthy coach potato";
+		} else if (healthPicker <= 30) {
+			characterHealth = "Average health";
+		} else if (healthPicker < 35) {
+			characterHealth = "Bushy-tailed";
+		} else if (healthPicker == 35) {
+			characterHealth = "Perfect condition";
+		}
+
+		Scanner userImput = new Scanner(System.in);
+		System.out.println("Are you male or female?");
+		String userImp = userImput.nextLine();
+		switch (userImp) {
+		case "male":
+			System.out.println("You are now manly man.");
+			break;
+		case "female":
+			System.out.println("You are now femaley woman.");
+			break;
+		case "Male":
+			System.out.println("You are now manly man.");
+			break;
+		case "Female":
+			System.out.println("You are now femaley woman.");
+			break;
+		}
+		System.out.println("");
+		System.out.println("Pick a weapon from the list to master:");
+		System.out.println("To master axes, press A");
+		System.out.println("To master polearms, press P");
+		System.out.println("To master ranged weapons, press R");
+		System.out.println("To master magic weapons, press M");
+		System.out.println("To master daggers, press D");
+		System.out.println("To master swords, press S");
+		System.out.println("To master blunt weapons, B");
+		String userImp2 = userImput.nextLine();
+		switch (userImp2) {
+		case "a":
+			System.out.println("You mastered axes.");
+			weaponMastery = "Axe";
+			break;
+		case "r":
+			System.out.println("You mastered ranged weapons.");
+			weaponMastery = "Ranged";
+			break;
+		case "p":
+			System.out.println("You mastered polearms.");
+			weaponMastery = "Polearm";
+			break;
+		case "s":
+			System.out.println("You mastered swords.");
+			weaponMastery = "Sword";
+			break;
+		case "d":
+			System.out.println("You mastered daggers.");
+			weaponMastery = "Dagger";
+			break;
+		case "m":
+			System.out.println("You mastered magics.");
+			weaponMastery = "Magic";
+			break;
+		case "b":
+			System.out.println("You mastered blunt weapons.");
+			weaponMastery = "Blunt weapon";
+			break;
+		case "A":
+			System.out.println("You mastered axes.");
+			weaponMastery = "Axe";
+			break;
+		case "R":
+			System.out.println("You mastered ranged weapons.");
+			weaponMastery = "Ranged";
+			break;
+		case "P":
+			System.out.println("You mastered polearms.");
+			weaponMastery = "Polearm";
+			break;
+		case "S":
+			System.out.println("You mastered swords.");
+			weaponMastery = "Sword";
+			break;
+		case "D":
+			System.out.println("You mastered daggers.");
+			weaponMastery = "Dagger";
+			break;
+		case "M":
+			System.out.println("You mastered magics.");
+			weaponMastery = "Magic";
+			break;
+		case "B":
+			System.out.println("You mastered blunt weapons.");
+			weaponMastery = "Blunt weapon";
+			break;
+		}
+		System.out.println("Are you Helga?");
+		String userImp3 = userImput.nextLine();
+		switch (userImp3) {
+		case "yes":
+			System.out.println("LOOKS LIKE YOU GOT A LOT OF KICKIN THE SNOT OUT OF THE TO DO");
+			break;
+		case "no":
+			System.out.println("IT STILL LOOKS LIKE YOU GOT A LOT OF KICKIN THE SNOT OUT OF THE TO DO");
+			break;
+		}
+		System.out.println("Character generated: ");
+		System.out.println("Weapon Mastery: " + characterGenerator.weaponMastery);
+		System.out.println("Health: " + characterGenerator.characterHealth);
+		System.out.println(characterGenerator.healthPicker);
+	}
 }
