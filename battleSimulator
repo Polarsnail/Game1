@@ -2,9 +2,8 @@ import java.util.*;
 
 public class battleSimulator {
 	public static int gobNumbers = 1; //+ (int)(Math.random()*3);
-	public static void main(String[] args) throws InterruptedException { 
+	static void getBattle() { 
 		
-		characterGenerator.genCharacter();
 		//Thread.sleep(3000);
 		System.out.println("");
 		weaponGenerator.getWeapon();
