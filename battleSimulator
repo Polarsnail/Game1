@@ -47,7 +47,7 @@ public class battleSimulator {
         				if (allies == false) { 
         					System.out.println("The allies died!");
         					turn = false; 
-        					break; 
+        					return; 
         				} else if (monsterGenerator.monsterAlive == false) {
         					if(gobNumbers == 1)
         					{
@@ -61,7 +61,9 @@ public class battleSimulator {
         					System.out.println("[LOOT]");
         					weaponGenerator.getWeapon();
         					lootSystem.getLoot();
-        					break; 
+        					System.out.println("");
+        					expSystem.getExp();
+        					return; 
         				}  	
         	//allies go first			
         	if(alliesGoesFirst == true)
@@ -155,5 +157,4 @@ public class battleSimulator {
 		}
 	}
 }
-
 
