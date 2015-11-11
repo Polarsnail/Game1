@@ -1,0 +1,7 @@
+
+public class mainClass {
+	public static void main(String[] args) throws InterruptedException{
+	characterGenerator.genCharacter();
+	battleSimulator.getBattle();
+	}
+}
