@@ -1,7 +1,19 @@
 
 public class mainClass {
+	
 	public static void main(String[] args) throws InterruptedException{
-	characterGenerator.genCharacter();
+		boolean gameRun = true;
+		int gameStart = 0;
+	while( gameRun = true)
+	{
+		if(gameStart == 0)
+		{
+			//characterGenerator.genCharacter();
+			gameStart++;
+		}
+	environmentGenerator.getEnvironment();
 	battleSimulator.getBattle();
+	}
+		
 	}
 }
