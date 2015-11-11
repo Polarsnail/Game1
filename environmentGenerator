@@ -1,19 +1,22 @@
+import java.util.*;
 
 public class environmentGenerator {
 	static void getEnvironment(){
-		int environmentPicker = 1 + (int) (Math.random() * 10);
+		int environmentPicker = 1 + (int) (Math.random() * 21);
+		Scanner userImput = new Scanner(System.in);
+		String environmentPicked = "";
 		String pirateGrotto = "Pirate's Grotto"; //Grotto off of Landon lake, used to hide and store their loot
-		String impCity = "Grohthundal City"; //
-		String cfVillage = "Cleef Village";
-		String fedRiver = "Fedoray River";
+		String impCity = "Grohthundal City"; //The largest city in all of Fenestra
+		String cfVillage = "Cleef Village"; //A small village off the greenway north
+		String fedRiver = "Fedoray River"; //
 		String petePots = "Peter's Peck 'o Potions";
-		String theGreen = "The Greenway";
+		String theGreen = "The Greenway"; //The main road used by almost all merchants
 		String priField = "Pride Field";
-		String sunSpire = "Sun Spire";
+		String sunSpire = "Sun Spire"; //A tower that collects magic from the sun with crystals
 		String lockStock = "Locked & Stocked";
 		String trivCastle = "Trivius Castle";
 		String millForest = "The Millenial Forest";
-		String snapRock = "Snap Crackle & Rock";
+		String snapRock = "Snap Crackle & Rock"; //A old
 		String blackHills = "The Black Hills";
 		String arrowPeak = "Arrow Peak";
 		String valorHills = "Valor Foothills";
@@ -32,7 +35,44 @@ public class environmentGenerator {
 		String blank7 = "";
 		String blank8 = "";
 		String blank9 = "";
+		System.out.println("");
+		System.out.println("Which way would you like to go?");
+		System.out.println("a.North b.East c.South d.West");
+		String userImp = userImput.nextLine();
+		switch(userImp)
+		{
+		case "a": System.out.println("You went North!"); break;
+		case "b": System.out.println("You went East!"); break;
+		case "c": System.out.println("You went South!"); break;
+		case "d": System.out.println("You went West!"); break;
+		}
+		switch(environmentPicker)
+		{
+		case 1: environmentPicked = "Pirate's Grotto"; break;
+		case 2: environmentPicked = "Grohthundal City"; break;
+		case 3: environmentPicked = "Cleef Village"; break;
+		case 4: environmentPicked = "Fedoray River"; break;
+		case 5: environmentPicked = "Peter's Peck 'o Potions"; break;
+		case 6: environmentPicked = "The Greenway"; break;
+		case 7: environmentPicked = "Pride Field"; break;
+		case 8: environmentPicked = "Sun Spire"; break;
+		case 9: environmentPicked = "Locked & Stocked"; break;
+		case 10: environmentPicked = "Trivius Castle"; break;
+		case 11: environmentPicked = "The Millenial Forest"; break;
+		case 12: environmentPicked = "Snap Crackle & Rock"; break;
+		case 13: environmentPicked = "The Black Hills"; break;
+		case 14: environmentPicked = "Arrow Peak"; break;
+		case 15: environmentPicked = "Valor Foothills"; break;
+		case 16: environmentPicked = "Creo Peak"; break;
+		case 17: environmentPicked = "Swiggity Swamp"; break;
+		case 18: environmentPicked = "Landon Lake"; break;
+		case 19: environmentPicked = "Thieves Hollow"; break;
+		case 20: environmentPicked = "Windbreak Peak"; break;
+		case 21: environmentPicked = "Thistlebrush Woods"; break;
+		}
+		System.out.println("You have arrived at: " + environmentPicked);
 		
 		
 	}
 }
+
