@@ -105,7 +105,7 @@ public class characterGenerator {
 			weaponMastery = "Blunt weapon";
 			break;
 		}
-		System.out.println("Are you Helga?");
+		/*System.out.println("Are you Helga?");
 		String userImp3 = userImput.nextLine();
 		switch (userImp3) {
 		case "yes":
@@ -114,10 +114,13 @@ public class characterGenerator {
 		case "no":
 			System.out.println("IT STILL LOOKS LIKE YOU GOT A LOT OF KICKIN THE SNOT OUT OF THE TO DO");
 			break;
-		}
+		}*/
 		System.out.println("Character generated: ");
 		System.out.println("Weapon Mastery: " + characterGenerator.weaponMastery);
 		System.out.println("Health: " + characterGenerator.characterHealth);
 		System.out.println(characterGenerator.healthPicker);
+		System.out.println("");
+		levelGenerator.itemLevel = 1;
+		weaponGenerator.getWeapon();
 	}
 }
