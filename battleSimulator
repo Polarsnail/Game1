@@ -6,6 +6,7 @@ public class battleSimulator {
 		
 		//Thread.sleep(3000);
 		System.out.println("");
+		levelGenerator.itemLevel = 1;
 		weaponGenerator.getWeapon();
 		System.out.println("");
 		int allyInit = 10;
