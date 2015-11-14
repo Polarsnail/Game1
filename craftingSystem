@@ -21,7 +21,7 @@ public class craftingSystem {
 		System.out.println("");
 		System.out.println("Rat Filet (F)");
 		System.out.println("Required materials:");
-		System.out.println("Rat meat");
+		System.out.println("Rat Meat");
 		System.out.println("");
 		System.out.println("Bear Pelt Pouch (P)");
 		System.out.println("Required materials:");
@@ -30,19 +30,19 @@ public class craftingSystem {
 			String userImp = userImput.nextLine();
 			switch (userImp) {
 			case "F":
-				if (p1n == "Rat meat" && p1a > 0) {
+				if (p1n == "Rat Meat" && p1a > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch1Amount = inventoryPouch.pouch1Amount - 1;
-				} else if (p2n == "Rat meat" && p2a > 0) {
+				} else if (p2n == "Rat Meat" && p2a > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch2Amount = inventoryPouch.pouch2Amount - 1;
-				} else if (p3n == "Rat meat" && p3a > 0) {
+				} else if (p3n == "Rat Meat" && p3a > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch3Amount = inventoryPouch.pouch3Amount - 1;
-				} else if (p4n == "Rat meat" && p4a > 0) {
+				} else if (p4n == "Rat Meat" && p4a > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch4Amount = inventoryPouch.pouch4Amount - 1;
-				} else if (p5n == "Rat meat" && p5a > 0) {
+				} else if (p5n == "Rat Meat" && p5a > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch5Amount = inventoryPouch.pouch5Amount - 1;
 				} else {
