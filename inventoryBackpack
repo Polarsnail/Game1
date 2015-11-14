@@ -1,0 +1,76 @@
+
+public class inventoryBackpack {
+	public static String slot1Name = "Empty";
+	public static String slot2Name = "Empty";
+	public static String slot3Name = "Empty";
+	public static String slot4Name = "Empty";
+	public static String slot5Name = "Empty";
+	public static String slot6Name = "Empty";
+	public static String slot7Name = "Empty";
+	public static String slot8Name = "Empty";
+	public static String slot9Name = "Empty";
+	public static String slot10Name = "Empty";
+	
+	static void getInvent(){
+	if(slot1Name == "Empty" && battleSimulator.battleEnded == true){
+		int slot1Damage = weaponGenerator.damage;
+		slot1Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
+		battleSimulator.battleEnded = false;
+		return;			
+	}
+	else if(slot2Name == "Empty" && battleSimulator.battleEnded == true){
+		int slot2Damage = weaponGenerator.damage;
+		slot2Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
+		battleSimulator.battleEnded = false;
+		return;	
+	}
+	else if(slot3Name == "Empty" && battleSimulator.battleEnded == true){
+		int slot3Damage = weaponGenerator.damage;
+		slot3Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
+		battleSimulator.battleEnded = false;
+		return;			
+	}
+	else if(slot4Name == "Empty" && battleSimulator.battleEnded == true){
+		int slot4Damage = weaponGenerator.damage;
+		slot4Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
+		battleSimulator.battleEnded = false;
+		return;			
+	}
+	else if(slot5Name == "Empty" && battleSimulator.battleEnded == true){
+		int slot5Damage = weaponGenerator.damage;
+		slot5Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
+		battleSimulator.battleEnded = false;
+		return;			
+	}
+	else if(slot6Name == "Empty" && battleSimulator.battleEnded == true){
+		int slot6Damage = weaponGenerator.damage;
+		slot6Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
+		battleSimulator.battleEnded = false;
+		return;			
+	}
+	else if(slot7Name == "Empty" && battleSimulator.battleEnded == true){
+		int slot7Damage = weaponGenerator.damage;
+		slot7Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
+		battleSimulator.battleEnded = false;
+		return;			
+	}
+	else if(slot8Name == "Empty" && battleSimulator.battleEnded == true){
+		int slot8Damage = weaponGenerator.damage;
+		slot8Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
+		battleSimulator.battleEnded = false;
+		return;			
+	}
+	else if(slot9Name == "Empty" && battleSimulator.battleEnded == true){
+		int slot9Damage = weaponGenerator.damage;
+		slot9Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
+		battleSimulator.battleEnded = false;
+		return;			
+	}
+	else if(slot10Name == "Empty" && battleSimulator.battleEnded == true){
+		int slot10Damage = weaponGenerator.damage;
+		slot10Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
+		battleSimulator.battleEnded = false;
+		return;			
+	}
+}
+}
