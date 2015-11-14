@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class craftingSystem {
+	static void startCraft() {
+		String p1n = inventoryPouch.pouch1Name;
+		String p2n = inventoryPouch.pouch2Name;
+		String p3n = inventoryPouch.pouch3Name;
+		String p4n = inventoryPouch.pouch4Name;
+		String p5n = inventoryPouch.pouch5Name;
+		int p1a = inventoryPouch.pouch1Amount;
+		int p2a = inventoryPouch.pouch2Amount;
+		int p3a = inventoryPouch.pouch3Amount;
+		int p4a = inventoryPouch.pouch4Amount;
+		int p5a = inventoryPouch.pouch5Amount;
+		boolean crafting = true;
+			Scanner userImput = new Scanner(System.in);
+			System.out.println("");
+			System.out.println("Type ''cancel'' to exit crafting menu.");
+			System.out.println("");
+			System.out.println("What would you like to craft?");
+			System.out.println("");
+			System.out.println("Rat Filet (F)");
+			System.out.println("Required materials:");
+			System.out.println("Rat meat");
+			System.out.println("");
+			System.out.println("Bear Pelt Puch (P)");
+			System.out.println("Required materials:");
+			System.out.println("2 Bear Pelts");
+			while (crafting == true) {
+			String userImp = userImput.nextLine();
+			switch (userImp) {
+			case "F":
+				if (p1n == "Rat meat" && p1a > 0 || p2n == "Rat meat" && p2a > 0 || p3n == "Rat meat" && p3a > 0
+						|| p4n == "Rat meat" && p4a > 0 || p5n == "Rat meat" && p5a > 0) {
+					System.out.println("You cooked up a Rat Filet!");
+				} else {
+					System.out.println("You don't have enough rat meat to make a filet!");
+				}
+				break;
+			case "P":
+				if (p1n == "Bear Pelt" && p1a > 1 || p2n == "Bear Pelt" && p2a > 1 || p3n == "Bear Pelt" && p3a > 1
+						|| p4n == "Bear Pelt" && p4a > 1 || p5n == "Bear Pelt" && p5a > 1) {
+					System.out.println("You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
+				} else {
+					System.out.println("You don't have enough pelts to make a pouch!");
+				}
+				break;
+			case "cancel":
+				crafting = false;
+				break;
+			}
+		}
+	}
+}
