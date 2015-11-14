@@ -8,9 +8,9 @@ public class lootSystem {
 	{
 		int ratLoot = 1 + (int) (Math.random() * 3);
 		switch (ratLoot) {
-		case 1: lootPicked = "Rat tooth"; break;
-		case 2: lootPicked = "Rat meat"; break;
-		case 3: lootPicked = "Rat brain"; break;
+		case 1: lootPicked = "Rat Tooth"; break;
+		case 2: lootPicked = "Rat Meat"; break;
+		case 3: lootPicked = "Rat Brain"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
 	}
@@ -38,9 +38,9 @@ public class lootSystem {
 	{
 		int ratLoot = 1 + (int) (Math.random() * 6);
 		switch (ratLoot) {
-		case 1: lootPicked = "Rat Finger"; break;
-		case 2: lootPicked = "Rat Toe"; break;
-		case 3: lootPicked = "Rat Trinket"; break;
+		case 1: lootPicked = "Rat Tooth"; break;
+		case 2: lootPicked = "Rat Meat"; break;
+		case 3: lootPicked = "Rat Brain"; break;
 		case 4: lootPicked = "Bear Claw"; break;
 		case 5: lootPicked = "Bear Pelt"; break;
 		case 6: lootPicked = "Bear Head"; break;
@@ -67,9 +67,9 @@ public class lootSystem {
 		case 1: lootPicked = "Goblin Finger"; break;
 		case 2: lootPicked = "Goblin Toe"; break;
 		case 3: lootPicked = "Goblin Trinket"; break;
-		case 4: lootPicked = "Rat tooth"; break;
-		case 5: lootPicked = "Rat meat"; break;
-		case 6: lootPicked = "Rat brain"; break;
+		case 4: lootPicked = "Rat Tooth"; break;
+		case 5: lootPicked = "Rat Meat"; break;
+		case 6: lootPicked = "Rat Brain"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
 	}
