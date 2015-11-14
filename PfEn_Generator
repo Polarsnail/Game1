@@ -6,50 +6,97 @@ public class pfenGenerator
 	public static String pf11 = "Worthless";
 	public static String pf7 = "Rusty";
 	public static String pf0 = "Inexspensive";
-	public static String pf20 = "Thundering";//
+	public static String pf20 = "Thundering";
+	public static String pf22 = "Inferior";
+	public static String pf23 = "Defective";
+	public static String pf24 = "Poor Quality";
+	public static String pf25 = "Cruddy";
+	public static String pf26 = "Crappy";
+	public static String pf27 = "Slipshod";
+	public static String pf28 = "Poor";
+	public static String pf29 = "Lousy";
+	public static String pf30 = "Miserable";
+	public static String pf31 = "Dreadful";
+	public static String pf32 = "Crummy";
+	public static String pf33 = "Atrocious";
+	public static String pf34 = "Awful";
+	public static String pf35 = "Diddly";
+	public static String pf36 = "Inadequate";
+	public static String pf37 = "Substandard";
+	public static String pf38 = "Abominable";
+	public static String pf39 = "Crooked";
+	public static String pf40 = "Inaccurate";
+	public static String pf41 = "Improper";
+	public static String pf42 = "Unsuitable";
+	public static String pf43 = "Grody";
+	public static String pf44 = "Repulsive";
+	public static String pf45 = "Rotten";
+	public static String pf46 = "Foul";
+	public static String pf47 = "Discusting";
 	public static String prefixPicked = "Inexpensive";
 	public static String enchantmentPicked = "None";
 	static void getPrefix() {
 	
 		//Snailfecher's Prefixes
-		
-		
-		//This selects a Prefix between 0 and 21
-		//int prefixPicker = 0 + (int) (Math.random() * 21);
-
 		//These are the prefixes (Can Add More)
 		//String pf0 = "Inexspensive";
-		String pf1 = "Fierce";//
-		String pf2 = "Mysterious";//
-		String pf3 = "Precise";//
-		String pf4 = "Scrawny";//
-		String pf5 = "Ancient";//
-		String pf6 = "Swift";//
-		//String pf7 = "Rusty";//
-		String pf8 = "Lightweight";//
-		String pf9 = "Filthy";//
-		String pf10 = "Victorious";//
-		//String pf11 = "Worthless";//
-		String pf12 = "Superb";//
-		String pf13 = "Astonishing";//
-		String pf14 = "Ethereal";//
-		//String pf15 = "Delicate";//
-		String pf16 = "Durable";//
-		String pf17 = "Sturdy";//
-		String pf18 = "Average";//
-		String pf19 = "Incredible";//
-		String pf20 = "Thundering";//
-		String pf21 = "Legendary";//
+		String pf1 = "Fierce";
+		String pf2 = "Mysterious";
+		String pf3 = "Precise";
+		String pf4 = "Scrawny";
+		String pf5 = "Ancient";
+		String pf6 = "Swift";
+		//String pf7 = "Rusty";
+		String pf8 = "Lightweight";
+		String pf9 = "Filthy";
+		String pf10 = "Victorious";
+		//String pf11 = "Worthless";
+		String pf12 = "Superb";
+		String pf13 = "Astonishing";
+		String pf14 = "Ethereal";
+		//String pf15 = "Delicate";
+		String pf16 = "Durable";
+		String pf17 = "Sturdy";
+		String pf18 = "Average";
+		String pf19 = "Incredible";
+		String pf20 = "Thundering";
+		String pf21 = "Legendary";
 			
 		if(weaponGenerator.damage <= 10)
 		{ 
-			int CrappyPrefixes = 1 + (int) (Math.random() * 4);
+			int CrappyPrefixes = 1 + (int) (Math.random() * 30);
 			switch(CrappyPrefixes)
 			{
 			case 1: prefixPicked = pf0; break;
 			case 2: prefixPicked = pf7; break;
 			case 3: prefixPicked = pf11; break;
 			case 4: prefixPicked = pf15; break;
+			case 5: prefixPicked = pf22; break;
+			case 6: prefixPicked = pf23; break;
+			case 7: prefixPicked = pf24; break;
+			case 8: prefixPicked = pf25; break;
+			case 9: prefixPicked = pf26; break;
+			case 10: prefixPicked = pf27; break;
+			case 11: prefixPicked = pf28; break;
+			case 12: prefixPicked = pf29; break;
+			case 13: prefixPicked = pf30; break;
+			case 14: prefixPicked = pf31; break;
+			case 15: prefixPicked = pf32; break;
+			case 16: prefixPicked = pf33; break;
+			case 17: prefixPicked = pf34; break;
+			case 18: prefixPicked = pf35; break;
+			case 19: prefixPicked = pf36; break;
+			case 20: prefixPicked = pf37; break;
+			case 21: prefixPicked = pf38; break;
+			case 22: prefixPicked = pf39; break;
+			case 23: prefixPicked = pf40; break;
+			case 24: prefixPicked = pf41; break;
+			case 25: prefixPicked = pf42; break;
+			case 26: prefixPicked = pf43; break;
+			case 27: prefixPicked = pf44; break;
+			case 28: prefixPicked = pf45; break;
+			case 29: prefixPicked = pf46; break;
+			case 30: prefixPicked = pf47; break;
 			}
 		}
 		
@@ -155,8 +202,6 @@ public class pfenGenerator
 		}
 		}
 }
-
-
 
 
 
