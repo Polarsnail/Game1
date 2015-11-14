@@ -5,33 +5,93 @@ public class inventoryPouch {
 	public static String pouch3Name = "Empty";
 	public static String pouch4Name = "Empty";
 	public static String pouch5Name = "Empty";
+	public static int pouch1Amount = 0;
+	public static int pouch2Amount = 0;
+	public static int pouch3Amount = 0;
+	public static int pouch4Amount = 0;
+	public static int pouch5Amount = 0;
 	static void getInvent(){
 		
 		if(pouch1Name == "Empty" && battleSimulator.battleEnded2 == true){
 			pouch1Name = lootSystem.lootPicked;
+			pouch1Amount = lootSystem.lootAmount;
 			battleSimulator.battleEnded2 = false;
 			return;		
 		}
+		else if(pouch1Name == lootSystem.lootPicked){
+			pouch1Amount = pouch1Amount + lootSystem.lootAmount;
+		}
+		
 		else if(pouch2Name == "Empty" && battleSimulator.battleEnded2 == true){
 			pouch2Name = lootSystem.lootPicked;
+			pouch2Amount = lootSystem.lootAmount;
 			battleSimulator.battleEnded2 = false;
 			return;		
 		}
+		else if(pouch1Name == lootSystem.lootPicked){
+			pouch1Amount = pouch1Amount + lootSystem.lootAmount;
+		}
+		else if(pouch2Name == lootSystem.lootPicked){
+			pouch2Amount = pouch2Amount + lootSystem.lootAmount;
+		}
+		
 		else if(pouch3Name == "Empty" && battleSimulator.battleEnded2 == true){
 			pouch3Name = lootSystem.lootPicked;
+			pouch3Amount = lootSystem.lootAmount;
 			battleSimulator.battleEnded2 = false;
 			return;		
 		}
+		else if(pouch1Name == lootSystem.lootPicked){
+			pouch1Amount = pouch1Amount + lootSystem.lootAmount;
+		}
+		else if(pouch2Name == lootSystem.lootPicked){
+			pouch2Amount = pouch2Amount + lootSystem.lootAmount;
+		}
+		else if(pouch3Name == lootSystem.lootPicked){
+			pouch3Amount = pouch3Amount + lootSystem.lootAmount;
+		}
+		
 		else if(pouch4Name == "Empty" && battleSimulator.battleEnded2 == true){
-			pouch1Name = lootSystem.lootPicked;
+			pouch4Name = lootSystem.lootPicked;
+			pouch4Amount = lootSystem.lootAmount;
 			battleSimulator.battleEnded2 = false;
 			return;		
 		}
+		else if(pouch1Name == lootSystem.lootPicked){
+			pouch1Amount = pouch1Amount + lootSystem.lootAmount;
+		}
+		else if(pouch2Name == lootSystem.lootPicked){
+			pouch2Amount = pouch2Amount + lootSystem.lootAmount;
+		}
+		else if(pouch3Name == lootSystem.lootPicked){
+			pouch3Amount = pouch3Amount + lootSystem.lootAmount;
+		}
+		else if(pouch4Name == lootSystem.lootPicked){
+			pouch4Amount = pouch4Amount + lootSystem.lootAmount;
+		}
+		
 		else if(pouch5Name == "Empty" && battleSimulator.battleEnded2 == true){
-			pouch1Name = lootSystem.lootPicked;
+			pouch5Name = lootSystem.lootPicked;
+			pouch5Amount = lootSystem.lootAmount;
 			battleSimulator.battleEnded2 = false;
 			return;		
+		}
+		else if(pouch1Name == lootSystem.lootPicked){
+			pouch1Amount = pouch1Amount + lootSystem.lootAmount;
+		}
+		else if(pouch2Name == lootSystem.lootPicked){
+			pouch2Amount = pouch2Amount + lootSystem.lootAmount;
+		}
+		else if(pouch3Name == lootSystem.lootPicked){
+			pouch3Amount = pouch3Amount + lootSystem.lootAmount;
+		}
+		else if(pouch4Name == lootSystem.lootPicked){
+			pouch4Amount = pouch4Amount + lootSystem.lootAmount;
+		}
+		else if(pouch5Name == lootSystem.lootPicked){
+			pouch5Amount = pouch5Amount + lootSystem.lootAmount;
 		}
 	
 	}
 }
+
