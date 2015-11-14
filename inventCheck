@@ -1,0 +1,23 @@
+
+public class inventCheck {
+	static void inventCheck(){
+		System.out.println("Small Backpack contents:");
+		System.out.println("Slot 1: " + inventoryBackpack.slot1Name);
+		System.out.println("Slot 2: " + inventoryBackpack.slot2Name);
+		System.out.println("Slot 3: " + inventoryBackpack.slot3Name);
+		System.out.println("Slot 4: " + inventoryBackpack.slot4Name);
+		System.out.println("Slot 5: " + inventoryBackpack.slot5Name);
+		System.out.println("Slot 6: " + inventoryBackpack.slot6Name);
+		System.out.println("Slot 7: " + inventoryBackpack.slot7Name);
+		System.out.println("Slot 8: " + inventoryBackpack.slot8Name);
+		System.out.println("Slot 9: " + inventoryBackpack.slot9Name);
+		System.out.println("Slot 10: "+ inventoryBackpack.slot10Name);
+		System.out.println("");
+		System.out.println("Small Pouch contents:");
+		System.out.println("Slot 1: "+ inventoryPouch.pouch1Name);
+		System.out.println("Slot 2: "+ inventoryPouch.pouch2Name);
+		System.out.println("Slot 3: "+ inventoryPouch.pouch3Name);
+		System.out.println("Slot 4: "+ inventoryPouch.pouch4Name);
+		System.out.println("Slot 5: "+ inventoryPouch.pouch5Name);
+	}
+}
