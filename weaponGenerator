@@ -1,24 +1,23 @@
 public class weaponGenerator {
-
+	
 	public static int damage = 0;
-
+	public static String weaponMaterial = null;
+	public static String weaponType = null;
 	static void getWeapon() {
-
+		
 		// The Hobo of Power's Weapon Generator 3.0
-
+		
 		int weaponTypePicker = 1 + (int) (Math.random() * 27);
 		String materialType = null;
-		String weaponMaterial = null;
-		String weaponType = null;
 		String secondaryComponent = null;
 		String secondaryMaterial = null;
 		String weaponClass = null;
 
-		// Calculating damage based on item level
+		//Calculating damage based on item level
 
 		switch (levelGenerator.itemLevel) {
 		case 1:
-			damage = 1 + (int) (Math.random() * 8);
+			damage = 1 + (int) (Math.random() * 20);
 			break;
 		case 2:
 			damage = 8 + (int) (Math.random() * 3);
@@ -52,249 +51,276 @@ public class weaponGenerator {
 		// Getting prefix, attack & enchantment
 		pfenGenerator.getPrefix();
 		pfenGenerator.getEnchantment();
+		
 
-		// Choosing what weapon to generate
+			
+		//Choosing what weapon to generate
 		switch (weaponTypePicker) {
-		case 1:
-			weaponType = "Mace";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Blunt Weapon";
-
-			break;
-		case 2:
-			weaponType = "Battle Axe";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Axe";
-			break;
-		case 3:
-			weaponType = "Flail";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Blunt Weapon";
-			break;
-		case 4:
-			weaponType = "War Hammer";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Blunt Weapon";
-			break;
-		case 5:
-			weaponType = "Bladed Gauntlets";
-			materialType = "Metal";
-			weaponClass = "Dagger";
-			break;
-		case 6:
-			weaponType = "Dirk";
-			materialType = "Metal";
-			weaponClass = "Dagger";
-			break;
-		case 7:
-			weaponType = "Stiletto";
-			materialType = "Metal";
-			weaponClass = "Dagger";
-			break;
-		case 8:
-			weaponType = "Sparth";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Polearm";
-			break;
-		case 9:
-			weaponType = "Halberd";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Polearm";
-			break;
-		case 10:
-			weaponType = "War Scythe";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Polearm";
-			break;
-		case 11:
-			weaponType = "Pike";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Polearm";
-			break;
-		case 12:
-			weaponType = "Lance";
-			materialType = "Metal";
-			weaponClass = "Spear";
-			break;
-		case 13:
-			weaponType = "Maul";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Blunt Weapon";
-			break;
-		case 14:
-			weaponType = "Spear";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Spear";
-			break;
-		case 15:
-			weaponType = "Falchion";
-			materialType = "Metal";
-			weaponClass = "Sword";
-			break;
-		case 16:
-			weaponType = "Rapier";
-			materialType = "Metal";
-			weaponClass = "Sword";
-			break;
-		case 17:
-			weaponType = "Broadsword";
-			materialType = "Metal";
-			weaponClass = "Sword";
-			break;
-		case 18:
-			weaponType = "Shortsword";
-			materialType = "Metal";
-			weaponClass = "Sword";
-			break;
-		case 19:
-			weaponType = "Staff";
-			materialType = "Wood2";
-			secondaryComponent = "Catalyst";
-			weaponClass = "Magic";
-			break;
-		case 20:
-			weaponType = "Scepter";
-			materialType = "Wood2";
-			secondaryComponent = "Catalyst";
-			weaponClass = "Magic";
-			break;
-		case 21:
-			weaponType = "Wand";
-			materialType = "Wood2";
-			secondaryComponent = "Catalyst";
-			weaponClass = "Magic";
-			break;
-		case 22:
-			weaponType = "Longbow";
-			materialType = "Wood1";
-			weaponClass = "Ranged";
-			break;
-		case 23:
-			weaponType = "Recurve Bow";
-			materialType = "Wood1";
-			weaponClass = "Ranged";
-			break;
-		case 24:
-			weaponType = "Repeating Crossbow";
-			materialType = "Wood1";
-			weaponClass = "Ranged";
-			break;
-		case 25:
-			weaponType = "Shortbow";
-			materialType = "Wood1";
-			weaponClass = "Ranged";
-			break;
-		case 26:
-			weaponType = "Broad Axe";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Axe";
-			break;
-		case 27:
-			weaponType = "Shepherd's Axe";
-			materialType = "Metal";
-			secondaryComponent = "Shaft";
-			weaponClass = "Axe";
-			break;
+			case 1:
+				weaponType = "Mace"; 
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Blunt Weapon";
+				
+				break;
+			case 2: 
+				weaponType = "Battle Axe"; 
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Axe";
+				break;
+			case 3: 
+				weaponType = "Flail"; 
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Blunt Weapon";
+				break;
+			case 4:
+				weaponType = "War Hammer";
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Blunt Weapon";
+				break;
+			case 5: 
+				weaponType = "Bladed Gauntlets"; 
+				materialType = "Metal";
+				weaponClass = "Dagger";
+				break;
+			case 6: 
+				weaponType = "Dirk"; 
+				materialType = "Metal";
+				weaponClass = "Dagger";
+				break;
+			case 7:
+				weaponType = "Stiletto";
+				materialType = "Metal";
+				weaponClass = "Dagger";
+				break;
+			case 8: 
+				weaponType = "Sparth"; 
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Polearm";
+				break;
+			case 9: 
+				weaponType = "Halberd"; 
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Polearm";
+				break;
+			case 10: 
+				weaponType = "War Scythe"; 
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Polearm";
+				break;
+			case 11: 
+				weaponType = "Pike"; 
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Polearm";
+				break;
+			case 12: 
+				weaponType = "Lance"; 
+				materialType = "Metal";
+				weaponClass = "Spear";
+				break;
+			case 13: 
+				weaponType = "Maul"; 
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Blunt Weapon";
+				break;
+			case 14: 
+				weaponType = "Spear";
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Spear";
+				break;
+			case 15:
+				weaponType = "Falchion";  
+				materialType = "Metal";
+				weaponClass = "Sword";
+				break;
+			case 16:
+				weaponType = "Rapier";    
+				materialType = "Metal";
+				weaponClass = "Sword";
+				break;
+			case 17:
+				weaponType = "Broadsword";    
+				materialType = "Metal";
+				weaponClass = "Sword";
+				break;
+			case 18:
+				weaponType = "Shortsword";  
+				materialType = "Metal";
+				weaponClass = "Sword";
+				break;
+			case 19: 
+				weaponType = "Staff";   
+				materialType = "Wood2";
+				secondaryComponent = "Catalyst";
+				weaponClass = "Magic";
+				break;
+			case 20: 
+				weaponType = "Scepter"; 
+				materialType = "Wood2";
+				secondaryComponent = "Catalyst";
+				weaponClass = "Magic";
+				break;
+			case 21: 
+				weaponType = "Wand"; 
+				materialType = "Wood2";
+				secondaryComponent = "Catalyst";
+				weaponClass = "Magic";
+				break;
+			case 22:
+				weaponType = "Longbow";        
+				materialType = "Wood1";
+				weaponClass = "Ranged";
+				break;
+			case 23:
+				weaponType = "Recurve Bow";    
+				materialType = "Wood1";
+				weaponClass = "Ranged";
+				break;
+			case 24:
+				weaponType = "Repeating Crossbow"; 
+				materialType = "Wood1";
+				weaponClass = "Ranged";
+				break;
+			case 25:
+				weaponType = "Shortbow";
+				materialType = "Wood1";
+				weaponClass = "Ranged";
+				break;
+			case 26: 
+				weaponType = "Broad Axe"; 
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Axe";
+				break;
+			case 27: 
+				weaponType = "Shepherd's Axe"; 
+				materialType = "Metal";
+				secondaryComponent = "Shaft";
+				weaponClass = "Axe";
+				break;
 		}
 		if (characterGenerator.weaponMastery == weaponClass) {
 			damage = damage + levelGenerator.itemLevel;
 		}
-		// Choosing material tier
+		//Choosing material tier
 		if (materialType == "Metal") {
-			if (damage <= 20) {
+			if (damage <= 20) { 
 				weaponMaterial = "Copper";
-			} else if (damage <= 40) {
+			} 
+			else if (damage <= 40)  { 
 				weaponMaterial = "Bronze";
-			} else if (damage <= 60) {
+			} 
+			else if (damage <= 60)  {
 				weaponMaterial = "Iron";
-			} else if (damage <= 80) {
+			} 
+			else if (damage <= 80)  {
 				weaponMaterial = "Steel";
-			} else if (damage <= 100) {
+			} 
+			else if (damage <= 100) {
 				weaponMaterial = "Mithril";
 			}
-		} else if (materialType == "Wood1") {
-			if (damage <= 20) {
+		} 
+		else if (materialType == "Wood1") {
+			if (damage <= 20) { 
 				weaponMaterial = "Oak";
-			} else if (damage <= 40) {
+			} 
+			else if (damage <= 40)  { 
 				weaponMaterial = "Bamboo";
-			} else if (damage <= 60) {
+			}
+			else if (damage <= 60)  {
 				weaponMaterial = "Hickory";
-			} else if (damage <= 80) {
+			} 
+			else if (damage <= 80)  {
 				weaponMaterial = "Yew";
-			} else if (damage <= 100) {
+			} 
+			else if (damage <= 100) {
 				weaponMaterial = "Juniper";
 			}
-		} else if (materialType == "Wood2") {
-			if (damage <= 20) {
+		}
+		else if (materialType == "Wood2") {
+			if (damage <= 20) { 
 				weaponMaterial = "Oak";
-			} else if (damage <= 40) {
+			} 
+			else if (damage <= 40)  { 
 				weaponMaterial = "Maple";
-			} else if (damage <= 60) {
+			}
+			else if (damage <= 60)  {
 				weaponMaterial = "Mahogany";
-			} else if (damage <= 80) {
+			} 
+			else if (damage <= 80)  {
 				weaponMaterial = "Bloodwood";
-			} else if (damage <= 100) {
+			} 
+			else if (damage <= 100) {
 				weaponMaterial = "Ebony";
 			}
 		}
 		if (secondaryComponent == "Shaft") {
-			if (damage <= 20) {
+			if (damage <= 20) { 
 				secondaryMaterial = "Ash";
-			} else if (damage <= 35) {
+			} 
+			else if (damage <= 35) { 
 				secondaryMaterial = "Oak";
-			} else if (damage <= 50) {
+			}
+			else if (damage <= 50) {
 				secondaryMaterial = "Mahogany";
-			} else if (damage <= 65) {
+			} 
+			else if (damage <= 65) {
 				secondaryMaterial = "Bloodwood";
-			} else if (damage <= 80) {
+			} 
+			else if (damage <= 80) {
 				secondaryMaterial = "Ebony";
-			} else if (damage <= 100) {
+			}
+			else if (damage <= 100) {
 				secondaryMaterial = "Ironbark";
 			}
 		}
-
+		
 		if (secondaryComponent == "Catalyst") {
-			if (damage <= 20) {
+			if (damage <= 20) { 
 				secondaryMaterial = "Goblin Eye";
-			} else if (damage <= 35) {
+			} 
+			else if (damage <= 35) { 
 				secondaryMaterial = "Nekros Kosma";
-			} else if (damage <= 50) {
+			}
+			else if (damage <= 50) {
 				secondaryMaterial = "Arctic Focus";
-			} else if (damage <= 65) {
+			} 
+			else if (damage <= 65) {
 				secondaryMaterial = "Vetus Animarum";
-			} else if (damage <= 80) {
+			} 
+			else if (damage <= 80) {
 				secondaryMaterial = "Ignis Magicae";
-			} else if (damage <= 110) {
+			}
+			else if (damage <= 110) {
 				secondaryMaterial = "Solis Navitas";
 			}
 		}
-		// Printing item information
-		System.out.println("Weapon: " + pfenGenerator.prefixPicked + " " + weaponMaterial + " " + weaponType);
-		if (secondaryComponent != null) {
+			// Printing item information
+			System.out.println("Weapon: " + pfenGenerator.prefixPicked + " " + weaponMaterial + " " + weaponType);
+			if (secondaryComponent != null){
 			System.out.println(secondaryComponent + ": " + secondaryMaterial);
-		}
-		System.out.println("Weapon Class: " + weaponClass);
-		System.out.println("Level: " + levelGenerator.itemLevel);
-		if (characterGenerator.weaponMastery == weaponClass) {
-			System.out.println("You mastered this weapon type! Damage increased.");
-			int originalDamage = 0;
-			originalDamage = damage - levelGenerator.itemLevel;
-			System.out.println("Original Damage: " + originalDamage);
-			System.out.println("New Damage: " + damage);
-		} else {
+			}
+			System.out.println("Weapon Class: " + weaponClass);
+			System.out.println("Level: " + levelGenerator.itemLevel);
+			if (characterGenerator.weaponMastery == weaponClass) {
+				System.out.println("You mastered this weapon type! Damage increased.");
+				int originalDamage = 0;
+				originalDamage = damage - levelGenerator.itemLevel;
+				System.out.println("Original Damage: " + originalDamage);
+				System.out.println("New Damage: " + damage);
+			}
+			else {
 			System.out.println("Damage: " + damage);
-		}
-		System.out.println("Enchantment: " + pfenGenerator.enchantmentPicked);
-	}
+			}
+			System.out.println("Enchantment: " + pfenGenerator.enchantmentPicked);
+	}	
 }
