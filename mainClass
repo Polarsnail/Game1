@@ -1,19 +1,31 @@
-
+import java.util.*;
 public class mainClass {
 	
 	public static void main(String[] args) throws InterruptedException{
-		boolean gameRun = true;
-		int gameStart = 0;
-	while( gameRun = true)
+	boolean gameRun = false;
+	Scanner userImput = new Scanner(System.in);{	
+	System.out.println("What would you like to do?");
+	System.out.println("a.New Game b.Load Game c.Erase Game");
+	String userImp = userImput.nextLine();
+	
+	switch(userImp){
+	case "a": characterGenerator.genCharacter(); gameRun = true; System.out.println("Welcome to the world of Fenestra! What would you like to do?");  break;
+	case "b": System.out.println("There is no game to load!"); break;
+	case "c": System.out.println("There is no game to erase!");	break;
+	}
+	while(gameRun == true)
 	{
-		if(gameStart == 0)
-		{
-			//characterGenerator.genCharacter();
-			gameStart++;
+	System.out.println("");	
+	System.out.println("a.Travel b.Inventory c.Quit");
+	String userImp2 = userImput.nextLine();
+		switch(userImp2){
+		case "a":environmentGenerator.getEnvironment(); battleSimulator.getBattle(); break;
+		case "b":inventCheck.inventCheck(); break;
+		case "c": gameRun = false; break;
 		}
-	environmentGenerator.getEnvironment();
-	battleSimulator.getBattle();
+	
 	}
 		
 	}
+}
 }
