@@ -16,16 +16,16 @@ public class mainClass {
 	while(gameRun == true)
 	{
 	System.out.println("");	
-	System.out.println("a.Travel b.Inventory c.Quit");
+	System.out.println("a.Travel b.Inventory c.Craft d.Quit");
 	String userImp2 = userImput.nextLine();
 		switch(userImp2){
 		case "a":environmentGenerator.getEnvironment(); battleSimulator.getBattle(); break;
 		case "b":inventCheck.inventCheck(); break;
-		case "c": gameRun = false; break;
+		case "c":craftingSystem.startCraft(); break;
+		case "d": gameRun = false; break;
 		}
 	
 	}
 		
 	}
-}
 }
