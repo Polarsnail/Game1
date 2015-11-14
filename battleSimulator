@@ -2,6 +2,8 @@ import java.util.*;
 
 public class battleSimulator {
 	public static int gobNumbers = 1; //+ (int)(Math.random()*3);
+	public static boolean battleEnded = false;
+	public static boolean battleEnded2 = false;
 	static void getBattle() { 
 		
 		//Thread.sleep(3000);
@@ -61,6 +63,10 @@ public class battleSimulator {
         					lootSystem.getLoot();
         					System.out.println("");
         					expSystem.getExp();
+        					battleEnded = true;
+        					battleEnded2 = true;
+        					inventoryBackpack.getInvent();
+        					inventoryPouch.getInvent();
         					return; 
         				}  	
         	//allies go first			
@@ -155,4 +161,3 @@ public class battleSimulator {
 		}
 	}
 }
-
