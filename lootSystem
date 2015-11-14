@@ -12,7 +12,7 @@ public class lootSystem {
 		case 2: lootPicked = "Rat meat"; break;
 		case 3: lootPicked = "Rat brain"; break;
 		}
-		System.out.println(lootAmount + lootPicked);
+		System.out.println(lootAmount + " " + lootPicked);
 	}
 	if(monsterGenerator.monster == "Bear")
 	{
@@ -22,7 +22,7 @@ public class lootSystem {
 		case 2: lootPicked = "Bear Pelt"; break;
 		case 3: lootPicked = "Bear Head"; break;
 		}
-		System.out.println(lootAmount + lootPicked);
+		System.out.println(lootAmount + " " + lootPicked);
 	}
 	if(monsterGenerator.monster == "Goblin")
 	{
@@ -32,7 +32,7 @@ public class lootSystem {
 		case 2: lootPicked = "Goblin Toe"; break;
 		case 3: lootPicked = "Goblin Trinket"; break;
 		}
-		System.out.println(lootAmount + lootPicked);
+		System.out.println(lootAmount + " " + lootPicked);
 	}
 	if(monsterGenerator.monster == "Ratbear")
 	{
@@ -45,7 +45,7 @@ public class lootSystem {
 		case 5: lootPicked = "Bear Pelt"; break;
 		case 6: lootPicked = "Bear Head"; break;
 		}
-		System.out.println(lootAmount + lootPicked);
+		System.out.println(lootAmount + " " + lootPicked);
 	}
 	if(monsterGenerator.monster == "Beargoblin")
 	{
@@ -58,7 +58,7 @@ public class lootSystem {
 		case 5: lootPicked = "Goblin Toe"; break;
 		case 6: lootPicked = "Goblin Trinket"; break;
 		}
-		System.out.println(lootAmount + lootPicked);
+		System.out.println(lootAmount + " " + lootPicked);
 	}
 	if(monsterGenerator.monster == "Goblinrat")
 	{
@@ -71,11 +71,10 @@ public class lootSystem {
 		case 5: lootPicked = "Rat meat"; break;
 		case 6: lootPicked = "Rat brain"; break;
 		}
-		System.out.println(lootAmount + lootPicked);
+		System.out.println(lootAmount + " " + lootPicked);
 	}
 
 	
 }
 }
-
 
