@@ -13,36 +13,60 @@ public class craftingSystem {
 		int p4a = inventoryPouch.pouch4Amount;
 		int p5a = inventoryPouch.pouch5Amount;
 		boolean crafting = true;
-			Scanner userImput = new Scanner(System.in);
-			System.out.println("");
-			System.out.println("Type ''cancel'' to exit crafting menu.");
-			System.out.println("");
-			System.out.println("What would you like to craft?");
-			System.out.println("");
-			System.out.println("Rat Filet (F)");
-			System.out.println("Required materials:");
-			System.out.println("Rat meat");
-			System.out.println("");
-			System.out.println("Bear Pelt Puch (P)");
-			System.out.println("Required materials:");
-			System.out.println("2 Bear Pelts");
-			while (crafting == true) {
+		Scanner userImput = new Scanner(System.in);
+		System.out.println("");
+		System.out.println("Type ''cancel'' to exit crafting menu.");
+		System.out.println("");
+		System.out.println("What would you like to craft?");
+		System.out.println("");
+		System.out.println("Rat Filet (F)");
+		System.out.println("Required materials:");
+		System.out.println("Rat meat");
+		System.out.println("");
+		System.out.println("Bear Pelt Pouch (P)");
+		System.out.println("Required materials:");
+		System.out.println("2 Bear Pelts");
+		while (crafting == true) {
 			String userImp = userImput.nextLine();
 			switch (userImp) {
 			case "F":
-				if (p1n == "Rat meat" && p1a > 0 || p2n == "Rat meat" && p2a > 0 || p3n == "Rat meat" && p3a > 0
-						|| p4n == "Rat meat" && p4a > 0 || p5n == "Rat meat" && p5a > 0) {
+				if (p1n == "Rat meat" && p1a > 0) {
 					System.out.println("You cooked up a Rat Filet!");
+					inventoryPouch.pouch1Amount = inventoryPouch.pouch1Amount - 1;
+				} else if (p2n == "Rat meat" && p2a > 0) {
+					System.out.println("You cooked up a Rat Filet!");
+					inventoryPouch.pouch2Amount = inventoryPouch.pouch2Amount - 1;
+				} else if (p3n == "Rat meat" && p3a > 0) {
+					System.out.println("You cooked up a Rat Filet!");
+					inventoryPouch.pouch3Amount = inventoryPouch.pouch3Amount - 1;
+				} else if (p4n == "Rat meat" && p4a > 0) {
+					System.out.println("You cooked up a Rat Filet!");
+					inventoryPouch.pouch4Amount = inventoryPouch.pouch4Amount - 1;
+				} else if (p5n == "Rat meat" && p5a > 0) {
+					System.out.println("You cooked up a Rat Filet!");
+					inventoryPouch.pouch5Amount = inventoryPouch.pouch5Amount - 1;
 				} else {
 					System.out.println("You don't have enough rat meat to make a filet!");
 				}
 				break;
 			case "P":
-				if (p1n == "Bear Pelt" && p1a > 1 || p2n == "Bear Pelt" && p2a > 1 || p3n == "Bear Pelt" && p3a > 1
-						|| p4n == "Bear Pelt" && p4a > 1 || p5n == "Bear Pelt" && p5a > 1) {
+				if (p1n == "Bear Pelt" && p1a > 1) {
 					System.out.println("You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
+					inventoryPouch.pouch1Amount = inventoryPouch.pouch1Amount - 2;
+				} else if (p2n == "Bear Pelt" && p2a > 1) {
+					System.out.println("You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
+					inventoryPouch.pouch2Amount = inventoryPouch.pouch2Amount - 2;
+				} else if (p3n == "Bear Pelt" && p3a > 1) {
+					System.out.println("You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
+					inventoryPouch.pouch3Amount = inventoryPouch.pouch3Amount - 2;
+				} else if (p4n == "Bear Pelt" && p4a > 1) {
+					System.out.println("You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
+					inventoryPouch.pouch4Amount = inventoryPouch.pouch4Amount - 2;
+				} else if (p5n == "Bear Pelt" && p5a > 1) {
+					System.out.println("You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
+					inventoryPouch.pouch5Amount = inventoryPouch.pouch5Amount - 2;
 				} else {
-					System.out.println("You don't have enough pelts to make a pouch!");
+					System.out.println("You ain't got no pelts! Go 'way!");
 				}
 				break;
 			case "cancel":
