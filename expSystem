@@ -2,7 +2,30 @@
 public class expSystem {
     public static int expGain = 0;
     public static int charLevel = 1;
-	static void getExp(){
+    
+    public static int axesLevel = 1;
+    public static int axesGain = 0;
+    
+    public static int daggersLevel = 1;
+    public static int daggersGain = 0;
+    
+    public static int swordsLevel = 1;
+    public static int swordsGain = 0;
+    
+    public static int magicsLevel = 1;
+    public static int magicsGain = 0;
+    
+    public static int rangedLevel = 1;
+    public static int rangedGain = 0;
+    
+    public static int polearmsLevel = 1;
+    public static int polearmsGain = 0;
+    
+    public static int bluntLevel = 1;
+    public static int bluntGain = 0;
+    
+    static void getExp(){
+	
 	System.out.println("You have gained " + monsterGenerator.monsterExp + " " + characterGenerator.weaponMastery + " Exp");
 	expGain = expGain + monsterGenerator.monsterExp;
 	if(expGain >= 100){
