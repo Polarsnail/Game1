@@ -3,7 +3,7 @@ public class lootSystem {
 	public static String lootPicked = "";
 	public static int lootAmount = 1 + (int) (Math.random() * 3); 
 	static void getLoot() {
-		
+	lootAmount = 1 + (int) (Math.random() * 3);
 	if(monsterGenerator.monster == "Rat")
 	{
 		int ratLoot = 1 + (int) (Math.random() * 3);
