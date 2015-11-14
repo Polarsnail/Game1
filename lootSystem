@@ -1,7 +1,8 @@
 
 public class lootSystem {
+	public static String lootPicked = "";
 	static void getLoot() {
-		String lootPicked = "";
+		
 	if(monsterGenerator.monster == "Rat")
 	{
 		int ratLoot = 1 + (int) (Math.random() * 3);
@@ -12,8 +13,68 @@ public class lootSystem {
 		}
 		System.out.println("1 " + lootPicked);
 	}
+	if(monsterGenerator.monster == "Bear")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 3);
+		switch (ratLoot) {
+		case 1: lootPicked = "Bear Claw"; break;
+		case 2: lootPicked = "Bear Pelt"; break;
+		case 3: lootPicked = "Bear Head"; break;
+		}
+		System.out.println("1 " + lootPicked);
+	}
+	if(monsterGenerator.monster == "Goblin")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 3);
+		switch (ratLoot) {
+		case 1: lootPicked = "Goblin Finger"; break;
+		case 2: lootPicked = "Goblin Toe"; break;
+		case 3: lootPicked = "Goblin Trinket"; break;
+		}
+		System.out.println("1 " + lootPicked);
+	}
+	if(monsterGenerator.monster == "Ratbear")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 6);
+		switch (ratLoot) {
+		case 1: lootPicked = "Rat Finger"; break;
+		case 2: lootPicked = "Rat Toe"; break;
+		case 3: lootPicked = "Rat Trinket"; break;
+		case 4: lootPicked = "Bear Claw"; break;
+		case 5: lootPicked = "Bear Pelt"; break;
+		case 6: lootPicked = "Bear Head"; break;
+		}
+		System.out.println("1 " + lootPicked);
+	}
+	if(monsterGenerator.monster == "Beargoblin")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 3);
+		switch (ratLoot) {
+		case 1: lootPicked = "Bear Claw"; break;
+		case 2: lootPicked = "Bear Pelt"; break;
+		case 3: lootPicked = "Bear Head"; break;
+		case 4: lootPicked = "Goblin Finger"; break;
+		case 5: lootPicked = "Goblin Toe"; break;
+		case 6: lootPicked = "Goblin Trinket"; break;
+		}
+		System.out.println("1 " + lootPicked);
+	}
+	if(monsterGenerator.monster == "Goblinrat")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 3);
+		switch (ratLoot) {
+		case 1: lootPicked = "Goblin Finger"; break;
+		case 2: lootPicked = "Goblin Toe"; break;
+		case 3: lootPicked = "Goblin Trinket"; break;
+		case 4: lootPicked = "Rat tooth"; break;
+		case 5: lootPicked = "Rat meat"; break;
+		case 6: lootPicked = "Rat brain"; break;
+		}
+		System.out.println("1 " + lootPicked);
+	}
 
 	
 }
 }
+
 
