@@ -2,16 +2,6 @@ import java.util.Scanner;
 
 public class craftingSystem {
 	static void startCraft() {
-		String p1n = inventoryPouch.pouch1Name;
-		String p2n = inventoryPouch.pouch2Name;
-		String p3n = inventoryPouch.pouch3Name;
-		String p4n = inventoryPouch.pouch4Name;
-		String p5n = inventoryPouch.pouch5Name;
-		int p1a = inventoryPouch.pouch1Amount;
-		int p2a = inventoryPouch.pouch2Amount;
-		int p3a = inventoryPouch.pouch3Amount;
-		int p4a = inventoryPouch.pouch4Amount;
-		int p5a = inventoryPouch.pouch5Amount;
 		boolean crafting = true;
 		Scanner userImput = new Scanner(System.in);
 		System.out.println("");
@@ -30,19 +20,19 @@ public class craftingSystem {
 			String userImp = userImput.nextLine();
 			switch (userImp) {
 			case "F":
-				if (p1n == "Rat Meat" && p1a > 0) {
+				if (inventoryPouch.pouch1Name == "Rat Meat" && inventoryPouch.pouch1Amount > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch1Amount = inventoryPouch.pouch1Amount - 1;
-				} else if (p2n == "Rat Meat" && p2a > 0) {
+				} else if (inventoryPouch.pouch2Name == "Rat Meat" && inventoryPouch.pouch2Amount > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch2Amount = inventoryPouch.pouch2Amount - 1;
-				} else if (p3n == "Rat Meat" && p3a > 0) {
+				} else if (inventoryPouch.pouch3Name == "Rat Meat" && inventoryPouch.pouch3Amount > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch3Amount = inventoryPouch.pouch3Amount - 1;
-				} else if (p4n == "Rat Meat" && p4a > 0) {
+				} else if (inventoryPouch.pouch4Name == "Rat Meat" && inventoryPouch.pouch4Amount > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch4Amount = inventoryPouch.pouch4Amount - 1;
-				} else if (p5n == "Rat Meat" && p5a > 0) {
+				} else if (inventoryPouch.pouch5Name == "Rat Meat" && inventoryPouch.pouch5Amount > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch5Amount = inventoryPouch.pouch5Amount - 1;
 				} else {
@@ -50,20 +40,25 @@ public class craftingSystem {
 				}
 				break;
 			case "P":
-				if (p1n == "Bear Pelt" && p1a > 1) {
-					System.out.println("You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
+				if (inventoryPouch.pouch1Name == "Bear Pelt" && inventoryPouch.pouch1Amount > 1) {
+					System.out.println(
+							"You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
 					inventoryPouch.pouch1Amount = inventoryPouch.pouch1Amount - 2;
-				} else if (p2n == "Bear Pelt" && p2a > 1) {
-					System.out.println("You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
+				} else if (inventoryPouch.pouch2Name == "Bear Pelt" && inventoryPouch.pouch2Amount > 1) {
+					System.out.println(
+							"You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
 					inventoryPouch.pouch2Amount = inventoryPouch.pouch2Amount - 2;
-				} else if (p3n == "Bear Pelt" && p3a > 1) {
-					System.out.println("You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
+				} else if (inventoryPouch.pouch3Name == "Bear Pelt" && inventoryPouch.pouch3Amount > 1) {
+					System.out.println(
+							"You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
 					inventoryPouch.pouch3Amount = inventoryPouch.pouch3Amount - 2;
-				} else if (p4n == "Bear Pelt" && p4a > 1) {
-					System.out.println("You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
+				} else if (inventoryPouch.pouch4Name == "Bear Pelt" && inventoryPouch.pouch4Amount > 1) {
+					System.out.println(
+							"You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
 					inventoryPouch.pouch4Amount = inventoryPouch.pouch4Amount - 2;
-				} else if (p5n == "Bear Pelt" && p5a > 1) {
-					System.out.println("You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
+				} else if (inventoryPouch.pouch5Name == "Bear Pelt" && inventoryPouch.pouch5Amount > 1) {
+					System.out.println(
+							"You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
 					inventoryPouch.pouch5Amount = inventoryPouch.pouch5Amount - 2;
 				} else {
 					System.out.println("You ain't got no pelts! Go 'way!");
