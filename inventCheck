@@ -14,10 +14,25 @@ public class inventCheck {
 		System.out.println("Slot 10: "+ inventoryBackpack.slot10Name);
 		System.out.println("");
 		System.out.println("Small Pouch contents:");
-		System.out.println("Slot 1: "+ inventoryPouch.pouch1Amount+ " " + inventoryPouch.pouch1Name);
-		System.out.println("Slot 2: "+ inventoryPouch.pouch2Amount+ " " + inventoryPouch.pouch2Name);
-		System.out.println("Slot 3: "+ inventoryPouch.pouch3Amount+ " " + inventoryPouch.pouch3Name);
-		System.out.println("Slot 4: "+ inventoryPouch.pouch4Amount+ " " + inventoryPouch.pouch4Name);
-		System.out.println("Slot 5: "+ inventoryPouch.pouch5Amount+ " " + inventoryPouch.pouch5Name);
+		if(inventoryPouch.pouch1Amount <= 1){
+			System.out.println("Slot 1: " + inventoryPouch.pouch1Name);}
+		else{
+			System.out.println("Slot 1: "+ inventoryPouch.pouch1Amount+ " " + inventoryPouch.pouch1Name);}
+		if(inventoryPouch.pouch2Amount <= 1){
+			System.out.println("Slot 2: " + inventoryPouch.pouch2Name);}
+		else{
+			System.out.println("Slot 2: "+ inventoryPouch.pouch2Amount+ " " + inventoryPouch.pouch2Name);}
+		if(inventoryPouch.pouch3Amount <= 1){
+			System.out.println("Slot 3: " + inventoryPouch.pouch3Name);}
+		else{
+			System.out.println("Slot 3: "+ inventoryPouch.pouch3Amount+ " " + inventoryPouch.pouch3Name);}
+		if(inventoryPouch.pouch4Amount <= 1){
+			System.out.println("Slot 4: " + inventoryPouch.pouch4Name);}
+		else{
+			System.out.println("Slot 4: "+ inventoryPouch.pouch4Amount+ " " + inventoryPouch.pouch4Name);}
+		if(inventoryPouch.pouch5Amount <= 1){
+			System.out.println("Slot 5: " + inventoryPouch.pouch5Name);}
+		else{
+			System.out.println("Slot 5: "+ inventoryPouch.pouch5Amount+ " " + inventoryPouch.pouch5Name);}
 	}
 }
