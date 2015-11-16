@@ -10,11 +10,17 @@ public class inventoryPouch {
 	public static int pouch3Amount = 0;
 	public static int pouch4Amount = 0;
 	public static int pouch5Amount = 0;
+	public static String pouch1Desc = "No Description or an error :(";
+	public static String pouch2Desc = "No Description or an error :(";
+	public static String pouch3Desc = "No Description or an error :(";
+	public static String pouch4Desc = "No Description or an error :(";
+	public static String pouch5Desc = "No Description or an error :(";
 	static void getInvent(){
 		
 		if(pouch1Name == "Empty" && battleSimulator.battleEnded2 == true){
 			pouch1Name = lootSystem.lootPicked;
 			pouch1Amount = lootSystem.lootAmount;
+			pouch1Desc = lootSystem.itemDesc;
 			battleSimulator.battleEnded2 = false;
 			return;		
 		}
@@ -25,6 +31,7 @@ public class inventoryPouch {
 		else if(pouch2Name == "Empty" && battleSimulator.battleEnded2 == true){
 			pouch2Name = lootSystem.lootPicked;
 			pouch2Amount = lootSystem.lootAmount;
+			pouch2Desc = lootSystem.itemDesc;
 			battleSimulator.battleEnded2 = false;
 			return;		
 		}
@@ -38,6 +45,7 @@ public class inventoryPouch {
 		else if(pouch3Name == "Empty" && battleSimulator.battleEnded2 == true){
 			pouch3Name = lootSystem.lootPicked;
 			pouch3Amount = lootSystem.lootAmount;
+			pouch3Desc = lootSystem.itemDesc;
 			battleSimulator.battleEnded2 = false;
 			return;		
 		}
@@ -54,6 +62,7 @@ public class inventoryPouch {
 		else if(pouch4Name == "Empty" && battleSimulator.battleEnded2 == true){
 			pouch4Name = lootSystem.lootPicked;
 			pouch4Amount = lootSystem.lootAmount;
+			pouch4Desc = lootSystem.itemDesc;
 			battleSimulator.battleEnded2 = false;
 			return;		
 		}
@@ -73,6 +82,7 @@ public class inventoryPouch {
 		else if(pouch5Name == "Empty" && battleSimulator.battleEnded2 == true){
 			pouch5Name = lootSystem.lootPicked;
 			pouch5Amount = lootSystem.lootAmount;
+			pouch5Desc = lootSystem.itemDesc;
 			battleSimulator.battleEnded2 = false;
 			return;		
 		}
@@ -94,4 +104,3 @@ public class inventoryPouch {
 	
 	}
 }
-
