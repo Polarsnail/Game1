@@ -23,18 +23,33 @@ public class craftingSystem {
 				if (inventoryPouch.pouch1Name == "Rat Meat" && inventoryPouch.pouch1Amount > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch1Amount = inventoryPouch.pouch1Amount - 1;
+					if(inventoryPouch.pouch1Amount == 0){
+						inventoryPouch.pouch1Name = "Empty";
+					}
 				} else if (inventoryPouch.pouch2Name == "Rat Meat" && inventoryPouch.pouch2Amount > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch2Amount = inventoryPouch.pouch2Amount - 1;
+					if(inventoryPouch.pouch2Amount == 0){
+						inventoryPouch.pouch2Name = "Empty";
+					}
 				} else if (inventoryPouch.pouch3Name == "Rat Meat" && inventoryPouch.pouch3Amount > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch3Amount = inventoryPouch.pouch3Amount - 1;
+					if(inventoryPouch.pouch3Amount == 0){
+						inventoryPouch.pouch4Name = "Empty";
+					}
 				} else if (inventoryPouch.pouch4Name == "Rat Meat" && inventoryPouch.pouch4Amount > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch4Amount = inventoryPouch.pouch4Amount - 1;
+					if(inventoryPouch.pouch4Amount == 0){
+						inventoryPouch.pouch4Name = "Empty";
+					}
 				} else if (inventoryPouch.pouch5Name == "Rat Meat" && inventoryPouch.pouch5Amount > 0) {
 					System.out.println("You cooked up a Rat Filet!");
 					inventoryPouch.pouch5Amount = inventoryPouch.pouch5Amount - 1;
+					if(inventoryPouch.pouch5Amount == 0){
+						inventoryPouch.pouch5Name = "Empty";
+					}
 				} else {
 					System.out.println("You don't have enough rat meat to make a filet!");
 				}
@@ -44,22 +59,37 @@ public class craftingSystem {
 					System.out.println(
 							"You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
 					inventoryPouch.pouch1Amount = inventoryPouch.pouch1Amount - 2;
+					if(inventoryPouch.pouch1Amount == 0){
+						inventoryPouch.pouch1Name = "Empty";
+					}
 				} else if (inventoryPouch.pouch2Name == "Bear Pelt" && inventoryPouch.pouch2Amount > 1) {
 					System.out.println(
 							"You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
 					inventoryPouch.pouch2Amount = inventoryPouch.pouch2Amount - 2;
+					if(inventoryPouch.pouch2Amount == 0){
+						inventoryPouch.pouch2Name = "Empty";
+					}
 				} else if (inventoryPouch.pouch3Name == "Bear Pelt" && inventoryPouch.pouch3Amount > 1) {
 					System.out.println(
 							"You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
 					inventoryPouch.pouch3Amount = inventoryPouch.pouch3Amount - 2;
+					if(inventoryPouch.pouch3Amount == 0){
+						inventoryPouch.pouch3Name = "Empty";
+					}
 				} else if (inventoryPouch.pouch4Name == "Bear Pelt" && inventoryPouch.pouch4Amount > 1) {
 					System.out.println(
 							"You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
 					inventoryPouch.pouch4Amount = inventoryPouch.pouch4Amount - 2;
+					if(inventoryPouch.pouch4Amount == 0){
+						inventoryPouch.pouch4Name = "Empty";
+					}
 				} else if (inventoryPouch.pouch5Name == "Bear Pelt" && inventoryPouch.pouch5Amount > 1) {
 					System.out.println(
 							"You slapped up another pouch! You now have more inventory. (well not yet since it's not added)");
 					inventoryPouch.pouch5Amount = inventoryPouch.pouch5Amount - 2;
+					if(inventoryPouch.pouch5Amount == 0){
+						inventoryPouch.pouch5Name = "Empty";
+					}
 				} else {
 					System.out.println("You ain't got no pelts! Go 'way!");
 				}
