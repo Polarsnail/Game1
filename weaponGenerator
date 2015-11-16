@@ -3,15 +3,18 @@ public class weaponGenerator {
 	public static int damage = 0;
 	public static String weaponMaterial = null;
 	public static String weaponType = null;
+	public static String secondaryComponent = null;
+	public static String secondaryMaterial = null;
+	public static String weaponClass = null;
 	static void getWeapon() {
+		
 		
 		// The Hobo of Power's Weapon Generator 3.0
 		
 		int weaponTypePicker = 1 + (int) (Math.random() * 27);
 		String materialType = null;
-		String secondaryComponent = null;
-		String secondaryMaterial = null;
-		String weaponClass = null;
+		
+		
 
 		//Calculating damage based on item level
 
@@ -324,3 +327,4 @@ public class weaponGenerator {
 			System.out.println("Enchantment: " + pfenGenerator.enchantmentPicked);
 	}	
 }
+
