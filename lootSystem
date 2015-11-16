@@ -1,7 +1,8 @@
 
 public class lootSystem {
 	public static String lootPicked = "";
-	public static int lootAmount = 1 + (int) (Math.random() * 3); 
+	public static int lootAmount = 1 + (int) (Math.random() * 3);
+	public static String itemDesc = "";
 	static void getLoot() {
 	lootAmount = 1 + (int) (Math.random() * 3);
 	if(monsterGenerator.monster == "Rat")
@@ -13,6 +14,12 @@ public class lootSystem {
 		case 3: lootPicked = "Rat Brain"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
+		if(lootPicked == "Rat Tooth"){
+			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
+		else if(lootPicked == "Rat Meat"){
+			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
+		else if(lootPicked == "Rat Brain"){
+			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}		
 	}
 	if(monsterGenerator.monster == "Bear")
 	{
@@ -23,6 +30,12 @@ public class lootSystem {
 		case 3: lootPicked = "Bear Head"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
+		if(lootPicked == "Bear Claw"){
+			itemDesc = "A delicious pastry or a bear's fingernail? You Decide!";}
+		else if(lootPicked == "Bear Pelt"){
+			itemDesc = "Bear Pelts are incredibly useful for those seeking bigger backpacks or pouches.";}
+		else if(lootPicked == "Bear Head"){
+			itemDesc = "What? You think it's just okay to rip a bear's head off? It IS you game I guess... you savage.";}	
 	}
 	if(monsterGenerator.monster == "Goblin")
 	{
@@ -33,6 +46,12 @@ public class lootSystem {
 		case 3: lootPicked = "Goblin Trinket"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
+		if(lootPicked == "Goblin Finger"){
+			itemDesc = "Goblins don't need fingers anyways right? haha right guys? right...?";}
+		else if(lootPicked == "Goblin Toe"){
+			itemDesc = "You could eat this... or you could meet helga. Both are equally dangerous.";}
+		else if(lootPicked == "Goblin Trinket"){
+			itemDesc = "A shiny bauble that may attract those seeking treasure, however unfortunatly for you it is worthless.";}
 	}
 	if(monsterGenerator.monster == "Ratbear")
 	{
@@ -46,6 +65,18 @@ public class lootSystem {
 		case 6: lootPicked = "Bear Head"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
+		if(lootPicked == "Rat Tooth"){
+			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
+		else if(lootPicked == "Rat Meat"){
+			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
+		else if(lootPicked == "Rat Brain"){
+			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}
+		else if(lootPicked == "Bear Claw"){
+			itemDesc = "A delicious pastry or a bear's fingernail? You Decide!";}
+		else if(lootPicked == "Bear Pelt"){
+			itemDesc = "Bear Pelts are incredibly useful for those seeking bigger backpacks or pouches.";}
+		else if(lootPicked == "Bear Head"){
+			itemDesc = "What? You think it's just okay to rip a bear's head off? It IS you game I guess... you savage.";}
 	}
 	if(monsterGenerator.monster == "Beargoblin")
 	{
@@ -59,6 +90,18 @@ public class lootSystem {
 		case 6: lootPicked = "Goblin Trinket"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
+		if(lootPicked == "Bear Claw"){
+			itemDesc = "A delicious pastry or a bear's fingernail? You Decide!";}
+		else if(lootPicked == "Bear Pelt"){
+			itemDesc = "Bear Pelts are incredibly useful for those seeking bigger backpacks or pouches.";}
+		else if(lootPicked == "Bear Head"){
+			itemDesc = "What? You think it's just okay to rip a bear's head off? It IS you game I guess... you savage.";}
+		else if(lootPicked == "Goblin Finger"){
+			itemDesc = "Goblins don't need fingers anyways right? haha right guys? right...?";}
+		else if(lootPicked == "Goblin Toe"){
+			itemDesc = "You could eat this... or you could meet helga. Both are equally dangerous.";}
+		else if(lootPicked == "Goblin Trinket"){
+			itemDesc = "A shiny bauble that may attract those seeking treasure, however unfortunatly for you it is worthless.";}
 	}
 	if(monsterGenerator.monster == "Goblinrat")
 	{
@@ -72,9 +115,20 @@ public class lootSystem {
 		case 6: lootPicked = "Rat Brain"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
+		if(lootPicked == "Goblin Finger"){
+			itemDesc = "Goblins don't need fingers anyways right? haha right guys? right...?";}
+		else if(lootPicked == "Goblin Toe"){
+			itemDesc = "You could eat this... or you could meet helga. Both are equally dangerous.";}
+		else if(lootPicked == "Goblin Trinket"){
+			itemDesc = "A shiny bauble that may attract those seeking treasure, however unfortunatly for you it is worthless.";}
+		else if(lootPicked == "Rat Tooth"){
+			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
+		else if(lootPicked == "Rat Meat"){
+			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
+		else if(lootPicked == "Rat Brain"){
+			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}	
 	}
 
 	
 }
 }
-
