@@ -29,12 +29,11 @@ public class inventCheck {
 		
 		if(inventoryPouch.pouch5Amount <= 1){System.out.println("Slot 5: " + inventoryPouch.pouch5Name);}
 		else{System.out.println("Slot 5: "+ inventoryPouch.pouch5Amount+ " " + inventoryPouch.pouch5Name);}
-		System.out.println("");
-		System.out.println("a.View Item b.Exit Inventory");
-		String userImp = userImput.nextLine();
-		switch(userImp){
-		case "a":
+		boolean viewItems = true;
+		while(viewItems == true){
+			System.out.println("");
 			System.out.println("Which slot would you like to view? Example:b1 = backpack slot 1 or p1 = Pouch slot 1 ");
+			System.out.println("or press b to cancel looking at inventory.");
 			String userImp2 = userImput.nextLine();
 				switch(userImp2){
 				case "b1":if(inventoryBackpack.slot1Name != "Empty"){
@@ -182,10 +181,12 @@ public class inventCheck {
 						  break;}
 					  	  else System.out.println("Slot is empty!");
 			   		  	  break;
+				case "b": viewItems = false; break;
 				}
-				break;
-		case "b": break;
 		}
+				
+		
+		
 		
 			
 	}
