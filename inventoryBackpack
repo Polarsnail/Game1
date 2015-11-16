@@ -10,64 +10,174 @@ public class inventoryBackpack {
 	public static String slot8Name = "Empty";
 	public static String slot9Name = "Empty";
 	public static String slot10Name = "Empty";
+	public static int slot1Damage = 0;
+	public static int slot2Damage = 0;
+	public static int slot3Damage = 0;
+	public static int slot4Damage = 0;
+	public static int slot5Damage = 0;
+	public static int slot6Damage = 0;
+	public static int slot7Damage = 0;
+	public static int slot8Damage = 0;
+	public static int slot9Damage = 0;
+	public static int slot10Damage = 0;
+	public static int slot1Level = 0;
+	public static int slot2Level = 0;
+	public static int slot3Level = 0;
+	public static int slot4Level = 0;
+	public static int slot5Level = 0;
+	public static int slot6Level = 0;
+	public static int slot7Level = 0;
+	public static int slot8Level = 0;
+	public static int slot9Level = 0;
+	public static int slot10Level = 0;
+	public static String slot1SeComp = "No secondary component";
+	public static String slot2SeComp = "No secondary component";
+	public static String slot3SeComp = "No secondary component";
+	public static String slot4SeComp = "No secondary component";
+	public static String slot5SeComp = "No secondary component";
+	public static String slot6SeComp = "No secondary component";
+	public static String slot7SeComp = "No secondary component";
+	public static String slot8SeComp = "No secondary component";
+	public static String slot9SeComp = "No secondary component";
+	public static String slot10SeComp = "No secondary component";
+	public static String slot1SeMat = "";
+	public static String slot2SeMat = "";
+	public static String slot3SeMat = "";
+	public static String slot4SeMat = "";
+	public static String slot5SeMat = "";
+	public static String slot6SeMat = "";
+	public static String slot7SeMat = "";
+	public static String slot8SeMat = "";
+	public static String slot9SeMat = "";
+	public static String slot10SeMat = "";
+	public static String slot1Class = "Empty";
+	public static String slot2Class = "Empty";
+	public static String slot3Class = "Empty";
+	public static String slot4Class = "Empty";
+	public static String slot5Class = "Empty";
+	public static String slot6Class = "Empty";
+	public static String slot7Class = "Empty";
+	public static String slot8Class = "Empty";
+	public static String slot9Class = "Empty";
+	public static String slot10Class = "Empty";
+	public static String slot1Enchant = "None";
+	public static String slot2Enchant = "None";
+	public static String slot3Enchant = "None";
+	public static String slot4Enchant = "None";
+	public static String slot5Enchant = "None";
+	public static String slot6Enchant = "None";
+	public static String slot7Enchant = "None";
+	public static String slot8Enchant = "None";
+	public static String slot9Enchant = "None";
+	public static String slot10Enchant = "None";
 	
 	static void getInvent(){
 	if(slot1Name == "Empty" && battleSimulator.battleEnded == true){
-		int slot1Damage = weaponGenerator.damage;
+		slot1Damage = weaponGenerator.damage;
+		slot1Level = levelGenerator.itemLevel;
+		slot1SeComp = weaponGenerator.secondaryComponent;
+		slot1SeMat = weaponGenerator.secondaryMaterial;
+		slot1Class = weaponGenerator.weaponClass;
+		slot1Enchant = pfenGenerator.enchantmentPicked;		
 		slot1Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
 		battleSimulator.battleEnded = false;
 		return;			
 	}
 	else if(slot2Name == "Empty" && battleSimulator.battleEnded == true){
-		int slot2Damage = weaponGenerator.damage;
+		slot2Damage = weaponGenerator.damage;
+		slot2Level = levelGenerator.itemLevel;
+		slot2SeComp = weaponGenerator.secondaryComponent;
+		slot2SeMat = weaponGenerator.secondaryMaterial;
+		slot2Class = weaponGenerator.weaponClass;
+		slot2Enchant = pfenGenerator.enchantmentPicked;		
 		slot2Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
 		battleSimulator.battleEnded = false;
 		return;	
 	}
 	else if(slot3Name == "Empty" && battleSimulator.battleEnded == true){
-		int slot3Damage = weaponGenerator.damage;
+		slot3Damage = weaponGenerator.damage;
+		slot3Level = levelGenerator.itemLevel;
+		slot3SeComp = weaponGenerator.secondaryComponent;
+		slot3SeMat = weaponGenerator.secondaryMaterial;
+		slot3Class = weaponGenerator.weaponClass;
+		slot3Enchant = pfenGenerator.enchantmentPicked;		
 		slot3Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
 		battleSimulator.battleEnded = false;
 		return;			
 	}
 	else if(slot4Name == "Empty" && battleSimulator.battleEnded == true){
-		int slot4Damage = weaponGenerator.damage;
+		slot4Damage = weaponGenerator.damage;
+		slot4Level = levelGenerator.itemLevel;
+		slot4SeComp = weaponGenerator.secondaryComponent;
+		slot4SeMat = weaponGenerator.secondaryMaterial;
+		slot4Class = weaponGenerator.weaponClass;
+		slot4Enchant = pfenGenerator.enchantmentPicked;		
 		slot4Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
 		battleSimulator.battleEnded = false;
 		return;			
 	}
 	else if(slot5Name == "Empty" && battleSimulator.battleEnded == true){
-		int slot5Damage = weaponGenerator.damage;
+		slot5Damage = weaponGenerator.damage;
+		slot5Level = levelGenerator.itemLevel;
+		slot5SeComp = weaponGenerator.secondaryComponent;
+		slot5SeMat = weaponGenerator.secondaryMaterial;
+		slot5Class = weaponGenerator.weaponClass;
+		slot5Enchant = pfenGenerator.enchantmentPicked;		
 		slot5Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
 		battleSimulator.battleEnded = false;
 		return;			
 	}
 	else if(slot6Name == "Empty" && battleSimulator.battleEnded == true){
-		int slot6Damage = weaponGenerator.damage;
+		slot6Damage = weaponGenerator.damage;
+		slot6Level = levelGenerator.itemLevel;
+		slot6SeComp = weaponGenerator.secondaryComponent;
+		slot6SeMat = weaponGenerator.secondaryMaterial;
+		slot6Class = weaponGenerator.weaponClass;
+		slot6Enchant = pfenGenerator.enchantmentPicked;	
 		slot6Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
 		battleSimulator.battleEnded = false;
 		return;			
 	}
 	else if(slot7Name == "Empty" && battleSimulator.battleEnded == true){
-		int slot7Damage = weaponGenerator.damage;
+		slot7Damage = weaponGenerator.damage;
+		slot7Level = levelGenerator.itemLevel;
+		slot7SeComp = weaponGenerator.secondaryComponent;
+		slot7SeMat = weaponGenerator.secondaryMaterial;
+		slot7Class = weaponGenerator.weaponClass;
+		slot7Enchant = pfenGenerator.enchantmentPicked;		
 		slot7Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
 		battleSimulator.battleEnded = false;
 		return;			
 	}
 	else if(slot8Name == "Empty" && battleSimulator.battleEnded == true){
-		int slot8Damage = weaponGenerator.damage;
+		slot8Damage = weaponGenerator.damage;
+		slot8Level = levelGenerator.itemLevel;
+		slot8SeComp = weaponGenerator.secondaryComponent;
+		slot8SeMat = weaponGenerator.secondaryMaterial;
+		slot8Class = weaponGenerator.weaponClass;
+		slot8Enchant = pfenGenerator.enchantmentPicked;		
 		slot8Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
 		battleSimulator.battleEnded = false;
 		return;			
 	}
 	else if(slot9Name == "Empty" && battleSimulator.battleEnded == true){
-		int slot9Damage = weaponGenerator.damage;
+		slot9Damage = weaponGenerator.damage;
+		slot9Level = levelGenerator.itemLevel;
+		slot9SeComp = weaponGenerator.secondaryComponent;
+		slot9SeMat = weaponGenerator.secondaryMaterial;
+		slot9Class = weaponGenerator.weaponClass;
+		slot9Enchant = pfenGenerator.enchantmentPicked;		
 		slot9Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
 		battleSimulator.battleEnded = false;
 		return;			
 	}
 	else if(slot10Name == "Empty" && battleSimulator.battleEnded == true){
-		int slot10Damage = weaponGenerator.damage;
+		slot10Damage = weaponGenerator.damage;
+		slot10Level = levelGenerator.itemLevel;
+		slot10SeComp = weaponGenerator.secondaryComponent;
+		slot10SeMat = weaponGenerator.secondaryMaterial;
+		slot10Class = weaponGenerator.weaponClass;
+		slot10Enchant = pfenGenerator.enchantmentPicked;		
 		slot10Name = pfenGenerator.prefixPicked + " " + weaponGenerator.weaponMaterial + " " + weaponGenerator.weaponType;
 		battleSimulator.battleEnded = false;
 		return;			
