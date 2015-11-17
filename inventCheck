@@ -39,7 +39,8 @@ public class inventCheck {
 				case "b1":if(inventoryBackpack.slot1Name != "Empty"){
 					      System.out.println("Name: " + inventoryBackpack.slot1Name);
 						  System.out.println("Weapon Class: " + inventoryBackpack.slot1Class);
-						  System.out.println(inventoryBackpack.slot1SeComp+": "+ inventoryBackpack.slot1SeMat);
+						  if(inventoryBackpack.slot1SeComp != null){
+						  System.out.println(inventoryBackpack.slot1SeComp+": "+ inventoryBackpack.slot1SeMat);}
 						  System.out.println("Level: " + inventoryBackpack.slot1Level);
 						  System.out.println("Damage: " + inventoryBackpack.slot1Damage);
 						  System.out.println("Enchantment: " + inventoryBackpack.slot1Enchant);
@@ -50,7 +51,8 @@ public class inventCheck {
 				case "b2":if(inventoryBackpack.slot2Name != "Empty"){
 						  System.out.println("Name: " + inventoryBackpack.slot2Name);
 				  		  System.out.println("Weapon Class: " + inventoryBackpack.slot2Class);
-				  		  System.out.println(inventoryBackpack.slot2SeComp+": "+ inventoryBackpack.slot2SeMat);
+				  		  if(inventoryBackpack.slot2SeComp != null){
+				  		  System.out.println(inventoryBackpack.slot2SeComp+": "+ inventoryBackpack.slot2SeMat);}
 				  		  System.out.println("Level: " + inventoryBackpack.slot2Level);
 				  		  System.out.println("Damage: " + inventoryBackpack.slot2Damage);
 				  		  System.out.println("Enchantment: " + inventoryBackpack.slot2Enchant);
@@ -61,7 +63,8 @@ public class inventCheck {
 				case "b3":if(inventoryBackpack.slot3Name != "Empty"){
 						  System.out.println("Name: " + inventoryBackpack.slot3Name);
 		  		  		  System.out.println("Weapon Class: " + inventoryBackpack.slot3Class);
-		  		  		  System.out.println(inventoryBackpack.slot3SeComp+": "+ inventoryBackpack.slot3SeMat);
+		  		  		  if(inventoryBackpack.slot3SeComp != null){
+		  		  		  System.out.println(inventoryBackpack.slot3SeComp+": "+ inventoryBackpack.slot3SeMat);}
 		  		  		  System.out.println("Level: " + inventoryBackpack.slot3Level);
 		  		  		  System.out.println("Damage: " + inventoryBackpack.slot3Damage);
 		  		  		  System.out.println("Enchantment: " + inventoryBackpack.slot3Enchant);
@@ -72,7 +75,8 @@ public class inventCheck {
 				case "b4":if(inventoryBackpack.slot4Name != "Empty"){
 						  System.out.println("Name: " + inventoryBackpack.slot4Name);
 		  		  		  System.out.println("Weapon Class: " + inventoryBackpack.slot4Class);
-		  		  		  System.out.println(inventoryBackpack.slot4SeComp+": "+ inventoryBackpack.slot4SeMat);
+		  		  		  if(inventoryBackpack.slot4SeComp != null){
+		  		  		  System.out.println(inventoryBackpack.slot4SeComp+": "+ inventoryBackpack.slot4SeMat);}
 		  		  		  System.out.println("Level: " + inventoryBackpack.slot4Level);
 		  		  		  System.out.println("Damage: " + inventoryBackpack.slot4Damage);
 		  		  		  System.out.println("Enchantment: " + inventoryBackpack.slot4Enchant);
@@ -83,7 +87,8 @@ public class inventCheck {
 				case "b5":if(inventoryBackpack.slot5Name != "Empty"){
 						  System.out.println("Name: " + inventoryBackpack.slot5Name);
 		  		  		  System.out.println("Weapon Class: " + inventoryBackpack.slot5Class);
-		  		  		  System.out.println(inventoryBackpack.slot5SeComp+": "+ inventoryBackpack.slot5SeMat);
+		  		  		  if(inventoryBackpack.slot5SeComp != null){
+		  		  		  System.out.println(inventoryBackpack.slot5SeComp+": "+ inventoryBackpack.slot5SeMat);}
 		  		  		  System.out.println("Level: " + inventoryBackpack.slot5Level);
 		  		  		  System.out.println("Damage: " + inventoryBackpack.slot5Damage);
 		  		  		  System.out.println("Enchantment: " + inventoryBackpack.slot5Enchant);
@@ -94,7 +99,8 @@ public class inventCheck {
 				case "b6":if(inventoryBackpack.slot6Name != "Empty"){
 						  System.out.println("Name: " + inventoryBackpack.slot6Name);
 		  		  		  System.out.println("Weapon Class: " + inventoryBackpack.slot6Class);
-		  		  		  System.out.println(inventoryBackpack.slot6SeComp+": "+ inventoryBackpack.slot6SeMat);
+		  		  		  if(inventoryBackpack.slot6SeComp != null){
+		  		  		  System.out.println(inventoryBackpack.slot6SeComp+": "+ inventoryBackpack.slot6SeMat);}
 		  		  		  System.out.println("Level: " + inventoryBackpack.slot6Level);
 		  		  		  System.out.println("Damage: " + inventoryBackpack.slot6Damage);
 		  		  		  System.out.println("Enchantment: " + inventoryBackpack.slot6Enchant);
@@ -105,7 +111,8 @@ public class inventCheck {
 				case "b7":if(inventoryBackpack.slot7Name != "Empty"){
 					      System.out.println("Name: " + inventoryBackpack.slot7Name);
 		  		  		  System.out.println("Weapon Class: " + inventoryBackpack.slot7Class);
-		  		  		  System.out.println(inventoryBackpack.slot7SeComp+": "+ inventoryBackpack.slot7SeMat);
+		  		  		  if(inventoryBackpack.slot7SeComp != null){
+		  		  		  System.out.println(inventoryBackpack.slot7SeComp+": "+ inventoryBackpack.slot7SeMat);}
 		  		  		  System.out.println("Level: " + inventoryBackpack.slot7Level);
 		  		  		  System.out.println("Damage: " + inventoryBackpack.slot7Damage);
 		  		  		  System.out.println("Enchantment: " + inventoryBackpack.slot7Enchant);
@@ -116,7 +123,8 @@ public class inventCheck {
 				case "b8":if(inventoryBackpack.slot8Name != "Empty"){
 						  System.out.println("Name: " + inventoryBackpack.slot8Name);
 		  		  		  System.out.println("Weapon Class: " + inventoryBackpack.slot8Class);
-		  		  		  System.out.println(inventoryBackpack.slot8SeComp+": "+ inventoryBackpack.slot8SeMat);
+		  		  		  if(inventoryBackpack.slot8SeComp != null){
+		  		  		  System.out.println(inventoryBackpack.slot8SeComp+": "+ inventoryBackpack.slot8SeMat);}
 		  		  		  System.out.println("Level: " + inventoryBackpack.slot8Level);
 		  		  		  System.out.println("Damage: " + inventoryBackpack.slot8Damage);
 		  		  		  System.out.println("Enchantment: " + inventoryBackpack.slot8Enchant);
@@ -127,7 +135,8 @@ public class inventCheck {
 				case "b9":if(inventoryBackpack.slot9Name != "Empty"){
 						  System.out.println("Name: " + inventoryBackpack.slot9Name);
 		  		  		  System.out.println("Weapon Class: " + inventoryBackpack.slot9Class);
-		  		  		  System.out.println(inventoryBackpack.slot9SeComp+": "+ inventoryBackpack.slot9SeMat);
+		  		  		  if(inventoryBackpack.slot9SeComp != null){
+		  		  		  System.out.println(inventoryBackpack.slot9SeComp+": "+ inventoryBackpack.slot9SeMat);}
 		  		  		  System.out.println("Level: " + inventoryBackpack.slot9Level);
 		  		  		  System.out.println("Damage: " + inventoryBackpack.slot9Damage);
 		  		  		  System.out.println("Enchantment: " + inventoryBackpack.slot9Enchant);
@@ -138,7 +147,8 @@ public class inventCheck {
 				case "b10":if(inventoryBackpack.slot10Name != "Empty"){
 						   System.out.println("Name: " + inventoryBackpack.slot10Name);
 		  		  		   System.out.println("Weapon Class: " + inventoryBackpack.slot10Class);
-		  		  		   System.out.println(inventoryBackpack.slot10SeComp+": "+ inventoryBackpack.slot10SeMat);
+		  		  		  if(inventoryBackpack.slot10SeComp != null){
+		  		  		   System.out.println(inventoryBackpack.slot10SeComp+": "+ inventoryBackpack.slot10SeMat);}
 		  		  		   System.out.println("Level: " + inventoryBackpack.slot10Level);
 		  		  		   System.out.println("Damage: " + inventoryBackpack.slot10Damage);
 		  		  		   System.out.println("Enchantment: " + inventoryBackpack.slot10Enchant);
@@ -153,28 +163,28 @@ public class inventCheck {
 						  break;}
 						  else System.out.println("Slot is empty!");
 				   		  break;
-				case "p2":if(inventoryPouch.pouch1Name != "Empty"){
+				case "p2":if(inventoryPouch.pouch2Name != "Empty"){
 					  	  System.out.println("Name: " + inventoryPouch.pouch2Name);
 					  	  System.out.println("Amount in inventory: " + inventoryPouch.pouch2Amount);
 					  	  System.out.println("Description: " + inventoryPouch.pouch2Desc);
 					  	  break;}
 					  	  else System.out.println("Slot is empty!");
 			   		  	  break;
-				case "p3":if(inventoryPouch.pouch1Name != "Empty"){
+				case "p3":if(inventoryPouch.pouch3Name != "Empty"){
 					  	  System.out.println("Name: " + inventoryPouch.pouch3Name);
 					  	  System.out.println("Amount: " + inventoryPouch.pouch3Amount);
 					  	  System.out.println("Description: " + inventoryPouch.pouch3Desc);
 					  	  break;}
 					  	  else System.out.println("Slot is empty!");
 						  break;
-				case "p4":if(inventoryPouch.pouch1Name != "Empty"){
+				case "p4":if(inventoryPouch.pouch4Name != "Empty"){
 					  	  System.out.println("Name: " + inventoryPouch.pouch4Name);
 					  	  System.out.println("Amount in inventory: " + inventoryPouch.pouch4Amount);
 					  	  System.out.println("Description: " + inventoryPouch.pouch4Desc);
 					  	  break;}
 					  	  else System.out.println("Slot is empty!");
 			   		  	  break;
-				case "p5":if(inventoryPouch.pouch1Name != "Empty"){
+				case "p5":if(inventoryPouch.pouch5Name != "Empty"){
 						  System.out.println("Name: " + inventoryPouch.pouch5Name);
 						  System.out.println("Amount in inventory: " + inventoryPouch.pouch5Amount);
 						  System.out.println("Description: " + inventoryPouch.pouch5Desc);
