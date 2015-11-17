@@ -100,15 +100,186 @@ public class monsterGenerator
 				monsterAlive = true;
 				System.out.println("A Goblinrat popped out of some leaves!");
 			}
+		//Pirate's Grotto Mobs
+		if(monster == "Pirate Corsair")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Brawler")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Ship")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Captain")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Swabbie")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Navigator")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Cannoneer")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Carpenter")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Quarter Master")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Rat Carpenter")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Rat Brawler")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Rat Corsair")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Rat Captain")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Rat Cannoneer")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Rat Navigator")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Rat Swabbie")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Rat Ship")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Rat Quarter Master")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Shrimp Squad")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
+		if(monster == "Pirate Parrot")
+		{
+			monsterHealth = 1 + (int)(Math.random()*1);
+			monsterDamage = 1 + (int)(Math.random()*1);
+			monsterInit = 1 + (int)(Math.random()*1);
+			monsterExp = monsterHealth * 3;
+			monsterAlive = true;
+			System.out.println("");
+		}
 		//debug info
 		//System.out.println(monster +":");
-		//System.out.println(monsterHealth + " Health");
-		//System.out.println(monsterDamage + " Damage");
-		//System.out.println(monsterInit + " Initiative");
-		//System.out.println(monsterExp + " Experience");
-		
-		
-
-	}
-}
-
