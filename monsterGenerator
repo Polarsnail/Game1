@@ -283,3 +283,12 @@ public class monsterGenerator
 		}
 		//debug info
 		//System.out.println(monster +":");
+		//System.out.println(monsterHealth + " Health");
+		//System.out.println(monsterDamage + " Damage");
+		//System.out.println(monsterInit + " Initiative");
+		//System.out.println(monsterExp + " Experience");
+		
+		
+
+	}
+}
