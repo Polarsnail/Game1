@@ -21,7 +21,7 @@ public class lootSystem {
 		else if(lootPicked == "Rat Brain"){
 			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}		
 	}
-	if(monsterGenerator.monster == "Bear")
+	else if(monsterGenerator.monster == "Bear")
 	{
 		int ratLoot = 1 + (int) (Math.random() * 3);
 		switch (ratLoot) {
@@ -37,7 +37,7 @@ public class lootSystem {
 		else if(lootPicked == "Bear Head"){
 			itemDesc = "What? You think it's just okay to rip a bear's head off? It IS you game I guess... you savage.";}	
 	}
-	if(monsterGenerator.monster == "Goblin")
+	else if(monsterGenerator.monster == "Goblin")
 	{
 		int ratLoot = 1 + (int) (Math.random() * 3);
 		switch (ratLoot) {
@@ -53,7 +53,7 @@ public class lootSystem {
 		else if(lootPicked == "Goblin Trinket"){
 			itemDesc = "A shiny bauble that may attract those seeking treasure, however unfortunatly for you it is worthless.";}
 	}
-	if(monsterGenerator.monster == "Ratbear")
+	else if(monsterGenerator.monster == "Ratbear")
 	{
 		int ratLoot = 1 + (int) (Math.random() * 6);
 		switch (ratLoot) {
@@ -78,7 +78,7 @@ public class lootSystem {
 		else if(lootPicked == "Bear Head"){
 			itemDesc = "What? You think it's just okay to rip a bear's head off? It IS you game I guess... you savage.";}
 	}
-	if(monsterGenerator.monster == "Beargoblin")
+	else if(monsterGenerator.monster == "Beargoblin")
 	{
 		int ratLoot = 1 + (int) (Math.random() * 3);
 		switch (ratLoot) {
@@ -103,7 +103,7 @@ public class lootSystem {
 		else if(lootPicked == "Goblin Trinket"){
 			itemDesc = "A shiny bauble that may attract those seeking treasure, however unfortunatly for you it is worthless.";}
 	}
-	if(monsterGenerator.monster == "Goblinrat")
+	else if(monsterGenerator.monster == "Goblinrat")
 	{
 		int ratLoot = 1 + (int) (Math.random() * 3);
 		switch (ratLoot) {
