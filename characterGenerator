@@ -37,6 +37,7 @@ public class characterGenerator {
 			System.out.println("You are now femaley woman.");
 			break;
 		}
+		gameStory.getStory();
 		System.out.println("");
 		System.out.println("Pick a weapon from the list to master:");
 		System.out.println("To master axes, press A");
@@ -115,6 +116,7 @@ public class characterGenerator {
 			System.out.println("IT STILL LOOKS LIKE YOU GOT A LOT OF KICKIN THE SNOT OUT OF THE TO DO");
 			break;
 		}*/
+		
 		System.out.println("Character generated: ");
 		System.out.println("Weapon Mastery: " + characterGenerator.weaponMastery);
 		System.out.println("Health: " + characterGenerator.characterHealth);
