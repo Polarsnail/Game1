@@ -1,0 +1,59 @@
+import java.util.*;
+public class gameStory {
+public static void getStory(){
+	Scanner userImput = new Scanner(System.in);{
+	System.out.println("''You wake yet? I Helga, who you?''");
+	String userImp = userImput.nextLine();
+	String name = userImp;
+	try {
+	    Thread.sleep(2000);                 
+	} catch(InterruptedException ex) {
+	    Thread.currentThread().interrupt();
+	}
+	System.out.println("''" +name + " is bad name, Helga make new one.''");
+	try {
+	    Thread.sleep(2000);                 
+	} catch(InterruptedException ex) {
+	    Thread.currentThread().interrupt();
+	}
+	System.out.println("''New name Dinky.''");
+	try {
+	    Thread.sleep(2000);                 
+	} catch(InterruptedException ex) {
+	    Thread.currentThread().interrupt();
+	}
+	System.out.println("Respond: a.''Uhh, thanks I guess'' b.''Dinky is worse!'' c.''Too bad my name is " + name + "''");
+	String userImp2 = userImput.nextLine();
+	switch(userImp2){
+	case "a":System.out.println("''Uhh, thanks I guess''"); try {
+	    Thread.sleep(2000);                 
+	} catch(InterruptedException ex) {
+	    Thread.currentThread().interrupt();
+	} System.out.println("''You welcome''. *voice off in the distance* ''Helga, is the test subject awake yet?''");break;
+	case "b":System.out.println("''Dinky is worse!''");try {
+	    Thread.sleep(2000);                 
+	} catch(InterruptedException ex) {
+	}Thread.currentThread().interrupt(); System.out.println("''Dinky is goo-''. *voice off in the distance* ''Helga, is the test subject awake yet?''");break;
+	case "c":System.out.println("''Too bad my name is " + name + " '' ");try {
+	    Thread.sleep(2000);                 
+	} catch(InterruptedException ex) {
+	    Thread.currentThread().interrupt();
+	    break;
+	} System.out.println("''Helga no like you th--''. *voice off in the distance* ''Helga, is the test subject awake yet?''");	
+	}
+	try {
+	    Thread.sleep(4000);                 
+	} catch(InterruptedException ex) {
+	    Thread.currentThread().interrupt();
+	}
+	System.out.println("*Helga respond* ''They awake.'' *voice in the distance* ''Let them be for now Helga...''");
+	try {
+	    Thread.sleep(4000);                 
+	} catch(InterruptedException ex) {
+	    Thread.currentThread().interrupt();
+	}
+	System.out.println("*Helga leave room*");
+		}
+	
+}
+}
