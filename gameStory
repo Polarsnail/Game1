@@ -1,119 +1,155 @@
 import java.util.*;
+
 public class gameStory {
-public static void getStory(){
-	Scanner userImput = new Scanner(System.in);{
-	System.out.println("''You wake yet? I Helga, who you?''");
-	String userImp = userImput.nextLine();
-	String name = userImp;
-	try {
-	    Thread.sleep(2000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}
-	System.out.println("''" +name + " is bad name, Helga make new one.''");
-	try {
-	    Thread.sleep(2000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}
-	System.out.println("''New name Dinky.''");
-	try {
-	    Thread.sleep(2000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}
-	System.out.println("Respond: a.''Uhh, thanks I guess'' b.''Dinky is worse!'' c.''Too bad my name is " + name + "''");
-	String userImp2 = userImput.nextLine();
-	switch(userImp2){
-	case "a":System.out.println("''Uhh, thanks I guess''"); try {
-	    Thread.sleep(2000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	} System.out.println("''You welcome''. *voice off in the distance* ''Helga, is the test subject awake yet?''");break;
-	case "b":System.out.println("''Dinky is worse!''");try {
-	    Thread.sleep(2000);                 
-	} catch(InterruptedException ex) {
-	}Thread.currentThread().interrupt(); System.out.println("''Dinky is goo-''. *voice off in the distance* ''Helga, is the test subject awake yet?''");
-	try {
-	    Thread.sleep(2000);                 
-	} catch(InterruptedException ex) {
-	}break;
-	case "c":System.out.println("''Too bad my name is " + name + " '' "); 
-	try {
-	    Thread.sleep(2000); }                
-	 catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	 }
-	 System.out.println("''Helga no like you th--''. *voice off in the distance* ''Helga, is the test subject awake yet?''");
-	 break;
-	}
-	}
-	try {
-	    Thread.sleep(4000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}
-	System.out.println("*Helga respond* ''They awake.'' *voice in the distance* ''Let them be for now Helga...''");
-	try {
-	    Thread.sleep(4000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}
-	System.out.println("*Helga leave room*");
-	try {
-	    Thread.sleep(2000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}
-	System.out.println("*you move to get up when the man who was talking before walks into the room*");
-	try {
-	    Thread.sleep(4000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}
-	System.out.println("*he slaps you in the face and says* ''Prepare to be transmitted.''");
-	try {
-	    Thread.sleep(3000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}
-	System.out.println("Before you can do anything everything goes fu...z.z..y...");
-	try {
-	    Thread.sleep(4000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}
-	System.out.println("What would you like to do?");
-	System.out.println("a.Open eyes b.Hit the ground c.Forget the story LET'S PLAY SOME FANTASY!");
-	String userImp3 = userImput.nextLine();
-	switch(userImp3){
-	case "a":System.out.println("You open your eyes, but you do not see what you expect.");
-	try {
-	    Thread.sleep(2000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}System.out.println("You appear to be in a field with lush green grass");break;
-	case "b":System.out.println("You hit the ground, and to your surprise it is soft!");
-	try {
-	    Thread.sleep(2000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}System.out.println("As you open your eyes curiously, you find yourself inside a field of lush green grass.");break;
-	case "c":System.out.println("You're in a field of dang grass. Oh yeah theres also probably something wanting to kill you. Goodluck");break;	
-	}
-	try {
-	    Thread.sleep(4000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}System.out.println("Then suddenly a menu popped up asking what mastery you would like to master! (Choose it wisely!)");
-	try {
-	    Thread.sleep(4000);                 
-	} catch(InterruptedException ex) {
-	    Thread.currentThread().interrupt();
-	}	
+	public static void getStory() {
+		Scanner userImput = new Scanner(System.in);
+		{
+			System.out.println("''You wake yet? I Helga, who you?''");
+			String userImp = userImput.nextLine();
+			String name = userImp;
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException ex) {
+				Thread.currentThread().interrupt();
+			}
+			System.out.println("''" + name
+					+ " is bad name, Helga make new one.''");
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException ex) {
+				Thread.currentThread().interrupt();
+			}
+			System.out.println("''New name Dinky.''");
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException ex) {
+				Thread.currentThread().interrupt();
+			}
+			System.out
+					.println("Respond: a.''Uhh, thanks I guess'' b.''Dinky is worse!'' c.''Too bad my name is "
+							+ name + "''");
+			String userImp2 = userImput.nextLine();
+			switch (userImp2) {
+			case "a":
+				System.out.println("''Uhh, thanks I guess''");
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException ex) {
+					Thread.currentThread().interrupt();
+				}
+				System.out
+						.println("''You welcome''. *voice off in the distance* ''Helga, is the test subject awake yet?''");
+				break;
+			case "b":
+				System.out.println("''Dinky is worse!''");
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException ex) {
+				}
+				Thread.currentThread().interrupt();
+				System.out
+						.println("''Dinky is goo-''. *voice off in the distance* ''Helga, is the test subject awake yet?''");
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException ex) {
+				}
+				break;
+			case "c":
+				System.out.println("''Too bad my name is " + name + " '' ");
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException ex) {
+					Thread.currentThread().interrupt();
+				}
+				System.out
+						.println("''Helga no like you th--''. *voice off in the distance* ''Helga, is the test subject awake yet?''");
+				break;
+			}
 		}
-	
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
+		System.out
+				.println("*Helga respond* ''They awake.'' *voice in the distance* ''Let them be for now Helga...''");
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
+		System.out.println("*Helga leave room*");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
+		System.out
+				.println("*you move to get up when the man who was talking before walks into the room*");
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
+		System.out
+				.println("*he slaps you in the face and says* ''Prepare to be transmitted.''");
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
+		System.out
+				.println("Before you can do anything everything goes fu...z.z..y...");
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
+		System.out.println("What would you like to do?");
+		System.out
+				.println("a.Open eyes b.Hit the ground c.Forget the story LET'S PLAY SOME FANTASY!");
+		String userImp3 = userImput.nextLine();
+		switch (userImp3) {
+		case "a":
+			System.out
+					.println("You open your eyes, but you do not see what you expect.");
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException ex) {
+				Thread.currentThread().interrupt();
+			}
+			System.out
+					.println("You appear to be in a field with lush green grass");
+			break;
+		case "b":
+			System.out
+					.println("You hit the ground, and to your surprise it is soft!");
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException ex) {
+				Thread.currentThread().interrupt();
+			}
+			System.out
+					.println("As you open your eyes curiously, you find yourself inside a field of lush green grass.");
+			break;
+		case "c":
+			System.out
+					.println("You're in a field of dang grass. Oh yeah theres also probably something wanting to kill you. Goodluck");
+			break;
+		}
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
+		System.out
+				.println("Then suddenly a menu popped up asking what mastery you would like to master! (Choose it wisely!)");
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
+	}
+
 }
-
-
 
