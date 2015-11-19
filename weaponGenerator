@@ -321,7 +321,7 @@ public class weaponGenerator {
 		}
 			// Printing item information
 			System.out.println("Weapon: " + pfenGenerator.prefixPicked + " " + weaponMaterial + " " + weaponType);
-			if (secondaryComponent != null){
+			if (secondaryComponent != "blank"){
 			System.out.println(secondaryComponent + ": " + secondaryMaterial);
 			}
 			System.out.println("Weapon Class: " + weaponClass);
