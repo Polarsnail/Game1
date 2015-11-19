@@ -1,10 +1,10 @@
 import java.util.*;
 
 public class environmentGenerator {
+	public static String environmentPicked = "";
 	static void getEnvironment(){
-		int environmentPicker = 1 + (int) (Math.random() * 21);
+		int environmentPicker = 1 + (int) (Math.random() * 1);
 		Scanner userImput = new Scanner(System.in);
-		String environmentPicked = "";
 		String pirateGrotto = "Pirate's Grotto"; //Grotto off of Landon lake, used to hide and store their loot
 		String impCity = "Grohthundal City"; //The largest city in all of Fenestra
 		String cfVillage = "Cleef Village"; //A small village off the greenway north
@@ -75,4 +75,3 @@ public class environmentGenerator {
 		
 	}
 }
-
