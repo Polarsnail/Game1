@@ -14,6 +14,8 @@ public class monsterGenerator
 		//int monsterInit = 0;
 		//int monsterExp = 0;
 		//String monster = null;
+		if(environmentGenerator.environmentPicked == "Rat Goblin Bear Area")
+		{
 		int testmonsterPicker = 1 + (int)(Math.random()*20);
 		// 7/20-Rat 7/20-Goblin 3/20-Bear 1/20-Ratbear 1/20-Beargoblin 1/20-Goblinrat
 		switch(testmonsterPicker)
@@ -100,15 +102,42 @@ public class monsterGenerator
 				monsterAlive = true;
 				System.out.println("A Goblinrat popped out of some leaves!");
 			}
+		}
+		else if (environmentGenerator.environmentPicked == "Pirate's Grotto")
+	{
+			int pirateMobPicker = 1 + (int)(Math.random()*20);
+			switch(pirateMobPicker)
+			{
+			case 1: monster = "Pirate Marauder"; break;
+			case 2: monster = "Pirate Brawler"; break;
+			case 3: monster = "Pirate Ship"; break;
+			case 4: monster = "Pirate Captain"; break;
+			case 5: monster = "Pirate Swabbie"; break;
+			case 6: monster = "Pirate Navigator"; break;
+			case 7: monster = "Pirate Cannoneer"; break;
+			case 8: monster = "Pirate Carpenter"; break;
+			case 9: monster = "Pirate Quarter Master"; break;
+			case 10:monster = "Pirate Rat Carpenter"; break;
+			case 11:monster = "Pirate Rat Brawler"; break;
+			case 12:monster = "Pirate Rat Marauder"; break;
+			case 13:monster = "Pirate Rat Captain"; break;
+			case 14:monster = "Pirate Rat Cannoneer"; break;
+			case 15:monster = "Pirate Rat Navigator"; break;
+			case 16:monster = "Pirate Rat Swabbie"; break;
+			case 17:monster = "Pirate Rat Ship"; break;
+			case 18:monster = "Pirate Rat Quarter Master"; break;
+			case 19:monster = "Pirate Shrimp Squad"; break;
+			case 20:monster = "Pirate Parrot"; break;
+			}
 		//Pirate's Grotto Mobs
-		if(monster == "Pirate Corsair")
+		if(monster == "Pirate Marauder")
 		{
 			monsterHealth = 1 + (int)(Math.random()*1);
 			monsterDamage = 1 + (int)(Math.random()*1);
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("A Pirate Marauder pillages his way to the front! ");
 		}
 		if(monster == "Pirate Brawler")
 		{
@@ -117,7 +146,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Brawler beats down a crew member then turns to fight you!");
 		}
 		if(monster == "Pirate Ship")
 		{
@@ -126,7 +155,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("You hear a rustling in the bushes. A Pirate Ship sails through the shrub with ease!");
 		}
 		if(monster == "Pirate Captain")
 		{
@@ -135,7 +164,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Captain is giving orders for oyu to die!");
 		}
 		if(monster == "Pirate Swabbie")
 		{
@@ -144,7 +173,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Swabbie is about to swab the grin off your face!");
 		}
 		if(monster == "Pirate Navigator")
 		{
@@ -153,7 +182,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Navigator navigates his sword towards you!");
 		}
 		if(monster == "Pirate Cannoneer")
 		{
@@ -162,7 +191,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Cannoneer fires a barrage of shrimp at you!");
 		}
 		if(monster == "Pirate Carpenter")
 		{
@@ -171,7 +200,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Carpenter is going to saw you in half!");
 		}
 		if(monster == "Pirate Quarter Master")
 		{
@@ -180,7 +209,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Quarter Master waits for the battle to be over to continue his duties!");
 		}
 		if(monster == "Pirate Rat Carpenter")
 		{
@@ -189,7 +218,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Rat chews through a tree to prove a point!");
 		}
 		if(monster == "Pirate Rat Brawler")
 		{
@@ -198,16 +227,16 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Rat Brawler strangles a piece of cargo!");
 		}
-		if(monster == "Pirate Rat Corsair")
+		if(monster == "Pirate Rat Marauder")
 		{
 			monsterHealth = 1 + (int)(Math.random()*1);
 			monsterDamage = 1 + (int)(Math.random()*1);
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Rat Marauder pillages another rat as he steps forward!");
 		}
 		if(monster == "Pirate Rat Captain")
 		{
@@ -216,7 +245,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Rat Captain squeaks out an order to kill the adventurer!");
 		}
 		if(monster == "Pirate Rat Cannoneer")
 		{
@@ -225,7 +254,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Rat Cannoneer blasts into battle!");
 		}
 		if(monster == "Pirate Rat Navigator")
 		{
@@ -234,7 +263,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Rat Navigator maps his way to you!");
 		}
 		if(monster == "Pirate Rat Swabbie")
 		{
@@ -243,7 +272,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Rat Swabbie is going to mop the floor with you!");
 		}
 		if(monster == "Pirate Rat Ship")
 		{
@@ -252,7 +281,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("A Pirate Rat Ship shoots out from a cannon!");
 		}
 		if(monster == "Pirate Rat Quarter Master")
 		{
@@ -261,7 +290,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("A Pirate Rat Quarter Master is playing poker by himself!");
 		}
 		if(monster == "Pirate Shrimp Squad")
 		{
@@ -270,7 +299,7 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("A squad of Pirate Shrimp is minorly disturbing you!");
 		}
 		if(monster == "Pirate Parrot")
 		{
@@ -279,8 +308,9 @@ public class monsterGenerator
 			monsterInit = 1 + (int)(Math.random()*1);
 			monsterExp = monsterHealth * 3;
 			monsterAlive = true;
-			System.out.println("");
+			System.out.println("Pirate Parrot Squawks at you!");
 		}
+	}
 		//debug info
 		//System.out.println(monster +":");
 		//System.out.println(monsterHealth + " Health");
@@ -292,3 +322,4 @@ public class monsterGenerator
 
 	}
 }
+
