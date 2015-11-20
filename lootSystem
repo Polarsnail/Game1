@@ -5,6 +5,9 @@ public class lootSystem {
 	public static String itemDesc = "";
 	static void getLoot() {
 	lootAmount = 1 + (int) (Math.random() * 3);
+	//Test mob loots
+if(environmentGenerator.environmentPicked == "Rat tes thing")
+{
 	if(monsterGenerator.monster == "Rat")
 	{
 		int ratLoot = 1 + (int) (Math.random() * 3);
@@ -13,13 +16,7 @@ public class lootSystem {
 		case 2: lootPicked = "Rat Meat"; break;
 		case 3: lootPicked = "Rat Brain"; break;
 		}
-		System.out.println(lootAmount + " " + lootPicked);
-		if(lootPicked == "Rat Tooth"){
-			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
-		else if(lootPicked == "Rat Meat"){
-			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
-		else if(lootPicked == "Rat Brain"){
-			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}		
+		System.out.println(lootAmount + " " + lootPicked);		
 	}
 	else if(monsterGenerator.monster == "Bear")
 	{
@@ -30,12 +27,6 @@ public class lootSystem {
 		case 3: lootPicked = "Bear Head"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
-		if(lootPicked == "Bear Claw"){
-			itemDesc = "A delicious pastry or a bear's fingernail? You Decide!";}
-		else if(lootPicked == "Bear Pelt"){
-			itemDesc = "Bear Pelts are incredibly useful for those seeking bigger backpacks or pouches.";}
-		else if(lootPicked == "Bear Head"){
-			itemDesc = "What? You think it's just okay to rip a bear's head off? It IS you game I guess... you savage.";}	
 	}
 	else if(monsterGenerator.monster == "Goblin")
 	{
@@ -46,12 +37,6 @@ public class lootSystem {
 		case 3: lootPicked = "Goblin Trinket"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
-		if(lootPicked == "Goblin Finger"){
-			itemDesc = "Goblins don't need fingers anyways right? haha right guys? right...?";}
-		else if(lootPicked == "Goblin Toe"){
-			itemDesc = "You could eat this... or you could meet helga. Both are equally dangerous.";}
-		else if(lootPicked == "Goblin Trinket"){
-			itemDesc = "A shiny bauble that may attract those seeking treasure, however unfortunatly for you it is worthless.";}
 	}
 	else if(monsterGenerator.monster == "Ratbear")
 	{
@@ -65,18 +50,6 @@ public class lootSystem {
 		case 6: lootPicked = "Bear Head"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
-		if(lootPicked == "Rat Tooth"){
-			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
-		else if(lootPicked == "Rat Meat"){
-			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
-		else if(lootPicked == "Rat Brain"){
-			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}
-		else if(lootPicked == "Bear Claw"){
-			itemDesc = "A delicious pastry or a bear's fingernail? You Decide!";}
-		else if(lootPicked == "Bear Pelt"){
-			itemDesc = "Bear Pelts are incredibly useful for those seeking bigger backpacks or pouches.";}
-		else if(lootPicked == "Bear Head"){
-			itemDesc = "What? You think it's just okay to rip a bear's head off? It IS you game I guess... you savage.";}
 	}
 	else if(monsterGenerator.monster == "Beargoblin")
 	{
@@ -90,18 +63,6 @@ public class lootSystem {
 		case 6: lootPicked = "Goblin Trinket"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
-		if(lootPicked == "Bear Claw"){
-			itemDesc = "A delicious pastry or a bear's fingernail? You Decide!";}
-		else if(lootPicked == "Bear Pelt"){
-			itemDesc = "Bear Pelts are incredibly useful for those seeking bigger backpacks or pouches.";}
-		else if(lootPicked == "Bear Head"){
-			itemDesc = "What? You think it's just okay to rip a bear's head off? It IS you game I guess... you savage.";}
-		else if(lootPicked == "Goblin Finger"){
-			itemDesc = "Goblins don't need fingers anyways right? haha right guys? right...?";}
-		else if(lootPicked == "Goblin Toe"){
-			itemDesc = "You could eat this... or you could meet helga. Both are equally dangerous.";}
-		else if(lootPicked == "Goblin Trinket"){
-			itemDesc = "A shiny bauble that may attract those seeking treasure, however unfortunatly for you it is worthless.";}
 	}
 	else if(monsterGenerator.monster == "Goblinrat")
 	{
@@ -115,19 +76,512 @@ public class lootSystem {
 		case 6: lootPicked = "Rat Brain"; break;
 		}
 		System.out.println(lootAmount + " " + lootPicked);
-		if(lootPicked == "Goblin Finger"){
-			itemDesc = "Goblins don't need fingers anyways right? haha right guys? right...?";}
-		else if(lootPicked == "Goblin Toe"){
-			itemDesc = "You could eat this... or you could meet helga. Both are equally dangerous.";}
-		else if(lootPicked == "Goblin Trinket"){
-			itemDesc = "A shiny bauble that may attract those seeking treasure, however unfortunatly for you it is worthless.";}
+	}
+}
+	//Pirate's Grotto mob loot
+if(environmentGenerator.environmentPicked == "Pirate's Grotto")
+{
+	if(monsterGenerator.monster == "Pirate Gunslinger")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 4);
+		switch (ratLoot) {
+		case 1: lootPicked = "Leather Strap"; break;
+		case 2: lootPicked = "Gunpowder"; break;
+		case 3: lootPicked = "Lead Bullet"; break;
+		case 4: lootPicked = "Pirate Dubloon"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Brawler")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 4);
+		switch (ratLoot) {
+		case 1: lootPicked = "Leather Strap"; break;
+		case 2: lootPicked = "Leather Square"; break;
+		case 3: lootPicked = "Lead Curio"; break;
+		case 4: lootPicked = "Pirate Dubloon"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Ship")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 3);
+		switch (ratLoot) {
+		case 1: lootPicked = "Wood Plank"; break;
+		case 2: lootPicked = "Lead Nail"; break;
+		case 3: lootPicked = "Sail Cloth"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Captain")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 6);
+		switch (ratLoot) {
+		case 1: lootPicked = "Decorative Feather"; break;
+		case 2: lootPicked = "Felt Garment"; break;
+		case 3: lootPicked = "Fine Leather Strap"; break;
+		case 4: lootPicked = "Fine Leather Square"; break;
+		case 5: lootPicked = "Fine Gunpowder"; break;
+		case 6: lootPicked = "Pirate Dubloon"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Swabbie")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 2);
+		switch (ratLoot) {
+		case 1: lootPicked = "Wooden Bucket"; break;
+		case 2: lootPicked = "Pirate Dubloon"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Navigator")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 4);
+		switch (ratLoot) {
+		case 1: lootPicked = "Sea Chart"; break;
+		case 2: lootPicked = "Compass"; break;
+		case 3: lootPicked = "Telescope"; break;
+		case 4: lootPicked = "Pirate Dubloon"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Cannoneer")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 4);
+		switch (ratLoot) {
+		case 1: lootPicked = "Cannonball"; break;
+		case 2: lootPicked = "Gunpowder"; break;
+		case 3: lootPicked = "Cloth"; break;
+		case 4: lootPicked = "Pirate Dubloon"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Carpenter")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 4);
+		switch (ratLoot) {
+		case 1: lootPicked = "Wood Plank"; break;
+		case 2: lootPicked = "Lead Nail"; break;
+		case 3: lootPicked = "Waterproofing"; break;
+		case 4: lootPicked = "Pirate Dubloon"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Quarter Master")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 4);
+		switch (ratLoot) {
+		case 1: lootPicked = "Fine Leather Strap"; break;
+		case 2: lootPicked = "Fine Leather Square"; break;
+		case 3: lootPicked = "Fine Gunpowder"; break;
+		case 4: lootPicked = "Pirate Dubloon"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Carpenter")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 6);
+		switch (ratLoot) {
+		case 1: lootPicked = "Wood Plank"; break;
+		case 2: lootPicked = "Lead Nail"; break;
+		case 3: lootPicked = "Waterproofing"; break;
+		case 4: lootPicked = "Rat Tooth"; break;
+		case 5: lootPicked = "Rat Meat"; break;
+		case 6: lootPicked = "Rat Brain"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Brawler")
+	{
+		int ratLoot = 1 + (int) (Math.random() *6);
+		switch (ratLoot) {
+		case 1: lootPicked = "Leather Strap"; break;
+		case 2: lootPicked = "Leather Square"; break;
+		case 3: lootPicked = "Lead Curio"; break;
+		case 4: lootPicked = "Rat Tooth"; break;
+		case 5: lootPicked = "Rat Meat"; break;
+		case 6: lootPicked = "Rat Brain"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Gunslinger")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 6);
+		switch (ratLoot) {
+		case 1: lootPicked = "Leather Strap"; break;
+		case 2: lootPicked = "Gunpowder"; break;
+		case 3: lootPicked = "Lead Bullet"; break;
+		case 4: lootPicked = "Rat Tooth"; break;
+		case 5: lootPicked = "Rat Meat"; break;
+		case 6: lootPicked = "Rat Brain"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Captain")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 8);
+		switch (ratLoot) {
+		case 1: lootPicked = "Decorative Feather"; break;
+		case 2: lootPicked = "Felt Garment"; break;
+		case 3: lootPicked = "Fine Leather Strap"; break;
+		case 4: lootPicked = "Fine Leather Square"; break;
+		case 5: lootPicked = "Fine Gunpowder"; break;
+		case 6: lootPicked = "Rat Tooth"; break;
+		case 7: lootPicked = "Rat Meat"; break;
+		case 8: lootPicked = "Rat Brain"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Cannoneer")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 6);
+		switch (ratLoot) {
+		case 1: lootPicked = "Cannonball"; break;
+		case 2: lootPicked = "Gunpowder"; break;
+		case 3: lootPicked = "Cloth"; break;
+		case 4: lootPicked = "Rat Tooth"; break;
+		case 5: lootPicked = "Rat Meat"; break;
+		case 6: lootPicked = "Rat Brain"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Navigator")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 6);
+		switch (ratLoot) {
+		case 1: lootPicked = "Sea Chart"; break;
+		case 2: lootPicked = "Compass"; break;
+		case 3: lootPicked = "Telescope"; break;
+		case 4: lootPicked = "Rat Tooth"; break;
+		case 5: lootPicked = "Rat Meat"; break;
+		case 6: lootPicked = "Rat Brain"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Swabbie")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 4);
+		switch (ratLoot) {
+		case 1: lootPicked = "Wooden Bucket"; break;
+		case 2: lootPicked = "Rat Tooth"; break;
+		case 3: lootPicked = "Rat Meat"; break;
+		case 4: lootPicked = "Rat Brain"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Ship")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 3);
+		switch (ratLoot) {
+		case 1: lootPicked = "Small Wood Plank"; break;
+		case 2: lootPicked = "Lead Nail"; break;
+		case 3: lootPicked = "Sail Cloth"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Quarter Master")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 6);
+		switch (ratLoot) {
+		case 1: lootPicked = "Fine Leather Strap"; break;
+		case 2: lootPicked = "Fine Leather Square"; break;
+		case 3: lootPicked = "Fine Gunpowder"; break;
+		case 4: lootPicked = "Rat Tooth"; break;
+		case 5: lootPicked = "Rat Meat"; break;
+		case 6: lootPicked = "Rat Brain"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Shrimp Squad")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 3);
+		switch (ratLoot) {
+		case 1: lootPicked = "Raw Shrimp"; break;
+		case 2: lootPicked = "Shrimp Antennae"; break;
+		case 3: lootPicked = "Tiny Shrimp Pirate Hat"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+	else if(monsterGenerator.monster == "Pirate Parrot")
+	{
+		int ratLoot = 1 + (int) (Math.random() * 3);
+		switch (ratLoot) {
+		case 1: lootPicked = "Decorative Feather"; break;
+		case 2: lootPicked = "Beak"; break;
+		case 3: lootPicked = "Talon"; break;
+		}
+		System.out.println(lootAmount + " " + lootPicked);
+	}
+}
+	//Loot Descriptions go here
+//Rat Test Thing Loot Descriptions
+if(environmentGenerator.environmentPicked == "Rat Test thing")
+{
+	if(lootPicked == "Goblin Finger"){
+		itemDesc = "Goblins don't need fingers anyways right? haha right guys? right...?";}
+	else if(lootPicked == "Goblin Toe"){
+		itemDesc = "You could eat this... or you could meet helga. Both are equally dangerous.";}
+	else if(lootPicked == "Goblin Trinket"){
+		itemDesc = "A shiny bauble that may attract those seeking treasure, however unfortunatly for you it is worthless.";}
+	else if(lootPicked == "Rat Tooth"){
+		itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
+	else if(lootPicked == "Rat Meat"){
+		itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
+	else if(lootPicked == "Rat Brain"){
+		itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}
+}
+//Pirate's Grotto Loot Descriptions
+if(environmentGenerator.environmentPicked == "Pirate's Grotto")
+{
+	if(monsterGenerator.monster == "Pirate Gunslinger")
+	{
+		if(lootPicked == "Leather Strap"){
+			itemDesc = "Leather Straps are very useful for crafting.";}
+		else if(lootPicked == "Gunpowder"){
+			itemDesc = "The more Gunpowder you have the more explosives you can craft.";}
+		else if(lootPicked == "Lead Bullet"){
+			itemDesc = "Usable in a gun or can be melted down into Lead Ingots.";}
+		else if(lootPicked == "Pirate Dubloon"){
+			itemDesc = "Pirate's Currency, maybe someone is willing to trade you something for them?";}
+	}
+	else if(monsterGenerator.monster == "Pirate Brawler")
+	{
+		if(lootPicked == "Leather Strap"){
+			itemDesc = "Leather Straps are very useful for crafting.";}
+		else if(lootPicked == "Leather Square"){
+			itemDesc = "Leather Squares can be cut into strips or can be crafted with whole.";}
+		else if(lootPicked == "Lead Curio"){
+			itemDesc = "A small trinket only useful for being melted into Lead Ingots.";}
+		else if(lootPicked == "Pirate Dubloon"){
+			itemDesc = "Pirate's Currency, maybe someone is willing to trade you something for them?";}
+	}
+	else if(monsterGenerator.monster == "Pirate Ship")
+	{
+		if(lootPicked == "Wood Plank"){
+			itemDesc = "Just a simple plank of wood.";}
+		else if(lootPicked == "Lead Nail"){
+			itemDesc = "Can be melted into Lead Ingots.";}
+		else if(lootPicked == "Sail Cloth"){
+			itemDesc = "A tough piece of cloth. Useable for making more durable and resistant items.";}
+		else if(lootPicked == "Pirate Dubloon"){
+			itemDesc = "Pirate's Currency, maybe someone is willing to trade you something for them?";}
+	}
+	else if(monsterGenerator.monster == "Pirate Captain")
+	{
+		if(lootPicked == "Decorative Feather"){
+			itemDesc = "This is a pretty... useless item?";}
+		else if(lootPicked == "Felt Garment"){
+			itemDesc = "For those looking for a softer alternative for leather.";}
+		else if(lootPicked == "Fine Leather Strap"){
+			itemDesc = "Quite a bit more durable than regular Leather Straps.";}
+		else if(lootPicked == "Fine Leather Square"){
+			itemDesc = "These are hard to ''Fined''ahaha..ha.";}
+		else if(lootPicked == "Fine Gunpowder"){
+			itemDesc = "Fine Gunpowder is more pure than ordinary Gumpowder. It has more boom.";}
+		else if(lootPicked == "Pirate Dubloon"){
+			itemDesc = "Pirate's Currency, maybe someone is willing to trade you something for them?";}
+	}
+	else if(monsterGenerator.monster == "Pirate Swabbie")
+	{
+		if(lootPicked == "Wooden Bucket"){
+			itemDesc = "Can hold liquids but will spill when traveling. Also Salvagable.";}
+		else if(lootPicked == "Pirate Dubloon"){
+			itemDesc = "Pirate's Currency, maybe someone is willing to trade you something for them?";}
+	}
+	else if(monsterGenerator.monster == "Pirate Navigator")
+	{
+		if(lootPicked == "Sea Chart"){
+			itemDesc = "A Chart of the sea!";}
+		else if(lootPicked == "Compass"){
+			itemDesc = "A compass that points North... sometimes?";}
+		else if(lootPicked == "Telescope"){
+			itemDesc = "See the fear in their eyes!";}
+		else if(lootPicked == "Pirate Dubloon"){
+			itemDesc = "Pirate's Currency, maybe someone is willing to trade you something for them?";}
+	}
+	else if(monsterGenerator.monster == "Pirate Cannoneer")
+	{
+		if(lootPicked == "Cannonball"){
+			itemDesc = "Can be used to make alot of Lead Ingots.";}
+		else if(lootPicked == "Gunpowder"){
+			itemDesc = "The more Gunpowder you have the more explosives you can craft.";}
+		else if(lootPicked == "Cloth"){
+			itemDesc = "An all-purpose Cloth.";}
+		else if(lootPicked == "Pirate Dubloon"){
+			itemDesc = "Pirate's Currency, maybe someone is willing to trade you something for them?";}
+	}
+	else if(monsterGenerator.monster == "Pirate Carpenter")
+	{
+		if(lootPicked == "Wood Plank"){
+			itemDesc = "Just a simple plank of wood.";}
+		else if(lootPicked == "Lead Nail"){
+			itemDesc = "Can be melted into Lead Ingots.";}
+		else if(lootPicked == "Waterproofing"){
+			itemDesc = "A sort of sealing compound.";}
+		else if(lootPicked == "Pirate Dubloon"){
+			itemDesc = "Pirate's Currency, maybe someone is willing to trade you something for them?";}
+	}
+	else if(monsterGenerator.monster == "Pirate Quarter Master")
+	{
+		if(lootPicked == "Fine Leather Strap"){
+			itemDesc = "Quite a bit more durable than regular Leather Straps.";}
+		else if(lootPicked == "Fine Leather Square"){
+			itemDesc = "These are hard to ''Fined''ahaha..ha.";}
+		else if(lootPicked == "Fine Gunpowder"){
+			itemDesc = "Fine Gunpowder is more pure than ordinary Gumpowder. It has more boom.";}
+		else if(lootPicked == "Pirate Dubloon"){
+			itemDesc = "Pirate's Currency, maybe someone is willing to trade you something for them?";}
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Carpenter")
+	{
+		if(lootPicked == "Wood Plank"){
+			itemDesc = "Just a simple plank of wood.";}
+		else if(lootPicked == "Lead Nail"){
+			itemDesc = "Can be melted into Lead Ingots.";}
+		else if(lootPicked == "Waterproofing"){
+			itemDesc = "A sort of sealing compound.";}
 		else if(lootPicked == "Rat Tooth"){
 			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
 		else if(lootPicked == "Rat Meat"){
 			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
 		else if(lootPicked == "Rat Brain"){
-			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}	
+			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}
 	}
+	else if(monsterGenerator.monster == "Pirate Rat Brawler")
+	{
+		if(lootPicked == "Leather Strap"){
+			itemDesc = "Leather Straps are very useful for crafting.";}
+		else if(lootPicked == "Leather Square"){
+			itemDesc = "Leather Squares can be cut into strips or can be crafted with whole.";}
+		else if(lootPicked == "Lead Curio"){
+			itemDesc = "A small trinket only useful for being melted into Lead Ingots.";}
+		else if(lootPicked == "Rat Tooth"){
+			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
+		else if(lootPicked == "Rat Meat"){
+			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
+		else if(lootPicked == "Rat Brain"){
+			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Gunslinger")
+	{
+		if(lootPicked == "Leather Strap"){
+			itemDesc = "Leather Straps are very useful for crafting.";}
+		else if(lootPicked == "Gunpowder"){
+			itemDesc = "The more Gunpowder you have the more explosives you can craft.";}
+		else if(lootPicked == "Lead Bullet"){
+			itemDesc = "Usable in a gun or can be melted down into Lead Ingots.";}
+		else if(lootPicked == "Rat Tooth"){
+			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
+		else if(lootPicked == "Rat Meat"){
+			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
+		else if(lootPicked == "Rat Brain"){
+			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Captain")
+	{
+		if(lootPicked == "Decorative Feather"){
+			itemDesc = "This is a pretty... useless item?";}
+		else if(lootPicked == "Felt Garment"){
+			itemDesc = "For those looking for a softer alternative for leather.";}
+		else if(lootPicked == "Fine Leather Strap"){
+			itemDesc = "Quite a bit more durable than regular Leather Straps.";}
+		else if(lootPicked == "Fine Leather Square"){
+			itemDesc = "These are hard to ''Fined''ahaha..ha.";}
+		else if(lootPicked == "Fine Gunpowder"){
+			itemDesc = "Fine Gunpowder is more pure than ordinary Gumpowder. It has more boom.";}
+		else if(lootPicked == "Rat Tooth"){
+			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
+		else if(lootPicked == "Rat Meat"){
+			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
+		else if(lootPicked == "Rat Brain"){
+			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Cannoneer")
+	{
+		if(lootPicked == "Cannonball"){
+			itemDesc = "Can be used to make alot of Lead Ingots.";}
+		else if(lootPicked == "Gunpowder"){
+			itemDesc = "The more Gunpowder you have the more explosives you can craft.";}
+		else if(lootPicked == "Cloth"){
+			itemDesc = "An all-purpose Cloth.";}
+		else if(lootPicked == "Rat Tooth"){
+			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
+		else if(lootPicked == "Rat Meat"){
+			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
+		else if(lootPicked == "Rat Brain"){
+			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Navigator")
+	{
+		if(lootPicked == "Sea Chart"){
+			itemDesc = "A Chart of the sea!";}
+		else if(lootPicked == "Compass"){
+			itemDesc = "A compass that points North... sometimes?";}
+		else if(lootPicked == "Telescope"){
+			itemDesc = "See the fear in their eyes!";}
+		else if(lootPicked == "Rat Tooth"){
+			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
+		else if(lootPicked == "Rat Meat"){
+			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
+		else if(lootPicked == "Rat Brain"){
+			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Swabbie")
+	{
+		if(lootPicked == "Wooden Bucket"){
+			itemDesc = "Can hold liquids but will spill when traveling. Also Salvagable.";}
+		else if(lootPicked == "Rat Tooth"){
+			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
+		else if(lootPicked == "Rat Meat"){
+			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
+		else if(lootPicked == "Rat Brain"){
+			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Ship")
+	{
+		if(lootPicked == "Small Wood Plank"){
+			itemDesc = "A smaller than usual plank of wood.";}
+		else if(lootPicked == "Lead Nail"){
+			itemDesc = "Can be melted into Lead Ingots.";}
+		else if(lootPicked == "Sail Cloth"){
+			itemDesc = "A tough piece of cloth. Useable for making more durable and resistant items.";}
+	}
+	else if(monsterGenerator.monster == "Pirate Rat Quarter Master")
+	{
+		if(lootPicked == "Fine Leather Strap"){
+			itemDesc = "Quite a bit more durable than regular Leather Straps.";}
+		else if(lootPicked == "Fine Leather Square"){
+			itemDesc = "These are hard to ''Fined''ahaha..ha.";}
+		else if(lootPicked == "Fine Gunpowder"){
+			itemDesc = "Fine Gunpowder is more pure than ordinary Gumpowder. It has more boom.";}
+		else if(lootPicked == "Rat Tooth"){
+			itemDesc = "A savage rat's tooth! Perhap this can be used for making bone items?";}
+		else if(lootPicked == "Rat Meat"){
+			itemDesc = "Some raw rat meat! Not exactly your idea of a meal... but it IS edible... right?";}
+		else if(lootPicked == "Rat Brain"){
+			itemDesc = "A rat brain has no real uses... however it IS about the size of a baseball... Yeah it has no uses.";}
+	}
+	else if(monsterGenerator.monster == "Pirate Shrimp Squad")
+	{
+		if(lootPicked == "Raw Shrimp"){
+			itemDesc = "A real meal is on the way!";}
+		else if(lootPicked == "Shrimp Antennae"){
+			itemDesc = "Shrimp Antennae have all sorts of magical powers!";}
+		else if(lootPicked == "Tiny Shrimp Pirate Hat"){
+			itemDesc = "Awww it's a cute little shrimp pirate hat! Too small for you to wear though...";}
+	}
+	else if(monsterGenerator.monster == "Pirate Parrot ")
+	{
+		if(lootPicked == "Decorative Feather"){
+			itemDesc = "This is a pretty... useless item?";}
+		else if(lootPicked == "Beak"){
+			itemDesc = "Hard as bone and as sharp as a blade.";}
+		else if(lootPicked == "Talon"){
+			itemDesc = "Razer sharp.";}
+	}
+	
+}
 
 	
 }
