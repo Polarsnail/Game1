@@ -1,0 +1,15 @@
+import java.util.*;
+public class Project123 {
+	public static void main(String[] args) throws InterruptedException{
+		
+	boolean gameRunning = true;		
+	Scanner userInput = new Scanner(System.in);
+	String userInp ="";
+	while(gameRunning == true)
+	{
+		System.out.println("Welcome to this test game! Press any key to continue.");
+		userInp = userInput.nextLine();	
+	}
+	
+}
+}
