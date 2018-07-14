@@ -1,0 +1,149 @@
+package Adverbs;
+
+public class professionsGen {
+	public static String professionOne = "error";
+	static void getProfession(){
+		String professionGroup = "";
+		int randomNumber = 0;
+		
+		randomNumber = 1 + (int) (Math.random() * 5);
+		
+		switch(randomNumber){
+		case 1: professionGroup = "Fighting"; break;
+		case 2: professionGroup = "Magical"; break;
+		case 3: professionGroup = "Specialized"; break;
+		case 4: professionGroup = "Generic"; break;
+		case 5: professionGroup = "Noble"; break;
+		}
+		
+		
+		if(professionGroup == "Fighting"){
+			randomNumber = 1 + (int) (Math.random() * 11);
+			switch(randomNumber){
+			case 1: professionOne = "Barbarian"; break;
+			case 2: professionOne = "Fighter"; break;
+			case 3: professionOne = "Monk"; break;
+			case 4: professionOne = "Ranger"; break;
+			case 5: professionOne = "Rogue"; break;
+			case 6: professionOne = "Cavalier"; break;
+			case 7: professionOne = "Gunslinger"; break;
+			case 8: professionOne = "Inquisitor"; break;
+			case 9: professionOne = "Vigilante"; break;
+			case 10: professionOne = "Brawler"; break;
+			case 11: professionOne = "Hunter"; break;
+			case 12: professionOne = ""; break;
+			case 13: professionOne = ""; break;
+			case 14: professionOne = ""; break;
+			case 15: professionOne = ""; break;
+			}
+		}
+		
+		if(professionGroup == "Magical"){
+			randomNumber = 1 + (int) (Math.random() * 10);
+			switch(randomNumber){
+			case 1: professionOne = "Bard"; break;
+			case 2: professionOne = "Cleric"; break;
+			case 3: professionOne = "Druid"; break;
+			case 4: professionOne = "Paladin"; break;
+			case 5: professionOne = "Sorcerer"; break;
+			case 6: professionOne = "Wizard"; break;
+			case 7: professionOne = "Alchemist"; break;
+			case 8: professionOne = "Magus"; break;
+			case 9: professionOne = "Oracle"; break;
+			case 10: professionOne = "Witch"; break;
+			case 11: professionOne = ""; break;
+			case 12: professionOne = ""; break;
+			case 13: professionOne = ""; break;
+			case 14: professionOne = ""; break;
+			case 15: professionOne = ""; break;
+			}
+		}
+		
+		if(professionGroup == "Specialized"){
+			randomNumber = 1 + (int) (Math.random() * 13);
+			switch(randomNumber){
+			case 1: professionOne = "Arcanist"; break;
+			case 2: professionOne = "Bloodrager"; break;
+			case 3: professionOne = "Shaman"; break;
+			case 4: professionOne = "Skald"; break;
+			case 5: professionOne = "Slayer"; break;
+			case 6: professionOne = "Swashbuckler"; break;
+			case 7: professionOne = "Warpriest"; break;
+			case 8: professionOne = "Shifer"; break;
+			case 9: professionOne = "Vampire Hunter"; break;
+			case 10: professionOne = "Summoner"; break;
+			case 11: professionOne = "Antipaladin"; break;
+			case 12: professionOne = "Ninja"; break;
+			case 13: professionOne = "Samurai"; break;
+			case 14: professionOne = ""; break;
+			case 15: professionOne = ""; break;
+			}
+		}
+		
+		if(professionGroup == "Generic"){
+			randomNumber = 1 + (int) (Math.random() * 53);
+			switch(randomNumber){
+			case 1: professionOne = "Architect"; break;
+			case 2: professionOne = "Baker"; break;
+			case 3: professionOne = "Barrister"; break;
+			case 4: professionOne = "Brewer"; break;
+			case 5: professionOne = "Butcher"; break;
+			case 6: professionOne = "Clerk"; break;
+			case 7: professionOne = "Cook"; break;
+			case 8: professionOne = "Courtesan"; break;
+			case 9: professionOne = "Driver"; break;
+			case 10: professionOne = "Engineer"; break;
+			case 11: professionOne = "Farmer"; break;
+			case 12: professionOne = "Fisherman"; break;
+			case 13: professionOne = "Gambler"; break;
+			case 14: professionOne = "Gardener"; break;
+			case 15: professionOne = "Herbalist"; break;
+			case 16: professionOne = "Innkeeper"; break;
+			case 17: professionOne = "Librarian"; break;
+			case 18: professionOne = "Merchant"; break;
+			case 19: professionOne = "Midwife"; break;
+			case 20: professionOne = "Miller"; break;
+			case 21: professionOne = "Miner"; break;
+			case 22: professionOne = "Porter"; break;
+			case 23: professionOne = "Sailor"; break;
+			case 24: professionOne = "Scribe"; break;
+			case 25: professionOne = "Shepherd"; break;
+			case 26: professionOne = "Stable master"; break;
+			case 27: professionOne = "Soldier"; break;
+			case 28: professionOne = "Tanner"; break;
+			case 29: professionOne = "Trapper"; break;
+			case 30: professionOne = "Woodcutter"; break;
+			case 31: professionOne = "Begger"; break;
+			case 32: professionOne = "Boat Pilot"; break;
+			case 33: professionOne = "Boatwright"; break;
+			case 34: professionOne = "Carpenter"; break;
+			case 35: professionOne = "Cartographer"; break;
+			case 36: professionOne = "Clothier"; break;
+			case 37: professionOne = "Cobbler"; break;
+			case 38: professionOne = "Diplomat"; break;
+			case 39: professionOne = "Fortune-Teller"; break;
+			case 40: professionOne = "Furrier"; break;
+			case 41: professionOne = "Jeweler"; break;
+			case 42: professionOne = "Limner"; break;
+			case 43: professionOne = "Lumberjack"; break;
+			case 44: professionOne = "Navigator"; break;
+			case 45: professionOne = "Pardoner"; break;
+			case 46: professionOne = "Potter"; break;
+			case 47: professionOne = "Seamstress"; break;
+			case 48: professionOne = "Stonemason"; break;
+			case 49: professionOne = "Tailor"; break;
+			case 50: professionOne = "Weaver"; break;
+			case 51: professionOne = "Translator"; break;
+			case 52: professionOne = "Mercenary"; break;
+			case 53: professionOne = "Guard"; break;
+			case 54: professionOne = ""; break;
+			case 55: professionOne = ""; break;
+			case 56: professionOne = ""; break;
+			case 57: professionOne = ""; break;
+			case 58: professionOne = ""; break;
+			}
+		}
+		
+	}
+
+}
